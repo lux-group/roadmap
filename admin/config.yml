@@ -1,0 +1,80 @@
+# Decap CMS configuration for lux-group/roadmap
+# OAuth Client ID — replace OAUTH_CLIENT_ID_PLACEHOLDER with your GitHub OAuth App Client ID
+# See README.md for setup instructions.
+
+backend:
+  name: github
+  repo: lux-group/roadmap
+  branch: main
+  # Netlify OAuth proxy is used so no self-hosted auth server is required
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: teams
+    label: Teams
+    label_singular: Team
+    folder: src/content/teams
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "Slug", name: slug, widget: string }
+      - { label: "Product Group", name: product_group, widget: string }
+      - { label: "Hero Image", name: hero_image, widget: image, required: false }
+
+      - label: "Team Members"
+        name: team_members
+        widget: list
+        required: false
+        fields:
+          - { label: "Name", name: name, widget: string }
+          - { label: "Title", name: title, widget: string }
+
+      - { label: "Gantt Section Title", name: gantt_section_title, widget: string, default: "2026 Roadmap" }
+
+      - label: "Gantt Items"
+        name: gantt_items
+        widget: list
+        max: 6
+        required: false
+        fields:
+          - { label: "Title", name: title, widget: string }
+          - { label: "Start Date", name: start_date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+          - { label: "End Date", name: end_date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+          - label: "Status"
+            name: status
+            widget: select
+            options:
+              - { label: "Planning", value: Planning }
+              - { label: "In Progress", value: "In Progress" }
+              - { label: "Shipped", value: Shipped }
+            default: Planning
+
+      - { label: "Goals Section Title", name: goals_section_title, widget: string, default: "Goals" }
+
+      - label: "Goals"
+        name: goals
+        widget: list
+        max: 8
+        required: false
+        fields:
+          - { label: "Headline", name: headline, widget: string }
+          - { label: "From Value", name: from_value, widget: string }
+          - { label: "To Value", name: to_value, widget: string }
+
+      - { label: "Key Initiatives Section Title", name: initiatives_section_title, widget: string, default: "Key Initiatives" }
+
+      - label: "Key Initiatives"
+        name: key_initiatives
+        widget: list
+        max: 3
+        required: false
+        fields:
+          - { label: "Heading", name: heading, widget: string }
+          - { label: "Description", name: description, widget: text }

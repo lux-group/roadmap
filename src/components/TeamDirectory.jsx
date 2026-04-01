@@ -17,11 +17,20 @@ function TeamCard({ team }) {
       className="flex items-center gap-3 bg-white rounded-card px-5 py-3 hover:shadow-md transition-shadow"
       style={{ boxShadow: 'var(--shadow-card)' }}
     >
-      {/* Circular photo placeholder */}
-      <div
-        className="rounded-full shrink-0 bg-[#e7e8ea]"
-        style={{ width: '70px', height: '70px' }}
-      />
+      {/* Team icon */}
+      {team.icon ? (
+        <img
+          src={`/roadmap/images/product-icon/${team.icon}`}
+          alt=""
+          className="rounded-full shrink-0 object-cover"
+          style={{ width: '70px', height: '70px' }}
+        />
+      ) : (
+        <div
+          className="rounded-full shrink-0 bg-[#e7e8ea]"
+          style={{ width: '70px', height: '70px' }}
+        />
+      )}
       {/* Name */}
       <span
         className="flex-1 min-w-0 font-semibold text-dark text-sm leading-5"

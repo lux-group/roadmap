@@ -5,7 +5,6 @@ You are building a product roadmap website for Luxury Escapes (lux-group). The r
 ## Stack
 - Vite + React + React Router
 - Tailwind CSS (install as a dependency, it is required)
-- Decap CMS for content editing
 - GitHub Pages for hosting via the gh-pages branch
 - GitHub Actions for build and deploy on push to main
 
@@ -218,26 +217,6 @@ key_initiatives:
 
 ---
 
-## Decap CMS
-
-Config at public/admin/config.yml:
-- Backend: GitHub
-- Repo: lux-group/roadmap
-- Branch: main
-- Media folder: public/uploads
-- OAuth Client ID: OAUTH_CLIENT_ID_PLACEHOLDER  ← leave this placeholder and add a comment
-- Collection name: "teams"
-- Collection folder: src/content/teams
-- Fields matching the frontmatter schema above exactly
-- gantt_items: list widget, max 6
-- goals: list widget, max 8
-- key_initiatives: list widget, max 3
-- status field on gantt items: select widget with options Planning, In Progress, Shipped
-
-Admin entry point at public/admin/index.html.
-
----
-
 ## Sample content files
 
 Create 3 sample markdown files with realistic placeholder content:
@@ -263,16 +242,9 @@ File at .github/workflows/deploy.yml:
 
 Include a README.md with:
 
-### OAuth Setup (Required before CMS works)
-1. Go to GitHub Settings > Developer Settings > OAuth Apps > New OAuth App
-2. Homepage URL: your GitHub Pages URL (found in repo Settings > Pages after first deploy)
-3. Authorization callback URL: https://api.netlify.com/auth/v1/callback
-4. Copy the Client ID and replace OAUTH_CLIENT_ID_PLACEHOLDER in public/admin/config.yml
-5. Commit and push
-
 ### Enabling GitHub Pages
 1. Go to repo Settings > Pages
 2. Set source branch to gh-pages
-3. Your site URL will appear here - use this for the OAuth App homepage URL above
+3. Your site URL will appear here
 
 ### Local development

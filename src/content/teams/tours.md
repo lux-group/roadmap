@@ -1,0 +1,45 @@
+---
+title: "Tours"
+slug: "tours"
+product_group: "Supply"
+hero_image: ""
+team_members:
+  - name: "Renan Murta"
+    title: "Product Manager"
+    photo: "renan-murta.jpg"
+gantt_section_title: "2026 Roadmap"
+gantt_items:
+  - title: "Placeholder content"
+    start_date: "2026-01-01"
+    end_date: "2026-06-30"
+  - title: "Placeholder content"
+    start_date: "2026-04-01"
+    end_date: "2026-09-30"
+goals_section_title: "Goals"
+goals:
+  - headline: "Improve gross margin"
+    from_value: "Current: 10.8M"
+    to_value: "Target: 13.5M"
+  - headline: "Increase total transaction value"
+    from_value: "Current: baseline"
+    to_value: "Target: material growth via private tours and personalization"
+  - headline: "Unlock private tours as high-value revenue stream"
+    from_value: "Current: disabled"
+    to_value: "Target: 3-4M annually at 35-40% GM"
+  - headline: "Achieve operational efficiency and scalability"
+    from_value: "Current: manual processes and inconsistencies"
+    to_value: "Target: streamlined ops via Kaptio and improved inventory management"
+  - headline: "Enable trip personalization and bundling"
+    from_value: "Current: pre-defined packages only"
+    to_value: "Target: custom trip planning and cross-vertical bundling"
+initiatives_section_title: "Key Initiatives"
+key_initiatives:
+  - heading: "Tailor-Made and Private Tours as High-Value Revenue Stream"
+    description: "We are reintroducing Private Tours as a scalable and high-value revenue stream by improving both operational capabilities and merchandising. This includes support for multi-currency pricing, sliding scale models, and flexible date changes. On the merchandising side, we are adding request-a-private-tour entry points, a new request form, homepage merchandising, and a dedicated landing page for promotion. Private tours previously generated 3-4M annually at 35-40% gross margin, making this a critical revenue opportunity. We are also enabling tailor-made and custom tour experiences where customers can build their own dream trip through an advanced planning experience with route and destination planning, curated hotel selection, flights and transportation options, and recommended attractions and experiences."
+
+  - heading: "Operational Scalability and Kaptio Integration"
+    description: "We are streamlining tour operations to improve payments, inventory management, and bundling across single tours, multiple tours, and cross-vertical combinations with Cruises and Hotels. Key objectives include finance control and reconciliation for consistent financial data including partial refunds, inventory control with clear parent-child relationships to prevent overselling, and sliding scale consistency even with bundling. We are evaluating a Kaptio integration to optimize the operational journey for tour setup and identify areas where buy vs build decisions make sense. This integration could significantly improve finance capabilities and inventory management while reducing manual operational effort."
+
+  - heading: "Manifest Accuracy and Customer Experience"
+    description: "We are improving operational efficiency by strengthening our systems for manifest accuracy, including consolidated bookings, transfer selections, optional experiences, and hotel and flights validation with clear communication to DMCs as updates occur. Additionally, we are enhancing the customer experience through post-booking journey companion features that provide destination insights, weather and packing suggestions, connection with fellow travellers through community spaces, reminders about the upcoming itinerary, and inspiration for activities at the destination. We are also implementing pre-tour community spaces where customers can connect with fellow travellers before their tour begins to share expectations, tips, and preparation advice."
+---

@@ -1,21 +1,25 @@
 export default function GoalCard({ goal }) {
   return (
-    <div
-      className="flex flex-col justify-center px-5 py-3 bg-white rounded-card"
-      style={{
-        boxShadow: 'var(--shadow-card)',
-        minHeight: '56px',
-      }}
-    >
+    <div>
       <p
-        className="font-semibold text-dark text-sm leading-5"
-        style={{ fontFamily: 'var(--font-body)' }}
+        style={{
+          fontFamily: 'var(--font-body)',
+          fontSize: '24px',
+          fontWeight: 500,
+          lineHeight: '28px',
+          color: '#000',
+        }}
       >
         {goal.headline}
       </p>
       <p
-        className="text-xs mt-0.5 opacity-60 text-dark"
-        style={{ fontFamily: 'var(--font-body)' }}
+        style={{
+          fontFamily: 'var(--font-body)',
+          fontSize: '14px',
+          lineHeight: '20px',
+          color: '#575757',
+          marginTop: '4px',
+        }}
       >
         {goal.from_value} → {goal.to_value}
       </p>

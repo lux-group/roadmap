@@ -18,7 +18,6 @@ function parseTeams() {
   return teams
 }
 
-// Placeholder hero image (Namibia landscape)
 const HERO_PLACEHOLDER = 'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1600&auto=format&fit=crop&q=80'
 
 function ProductHero({ title, heroImage }) {
@@ -34,12 +33,23 @@ function ProductHero({ title, heroImage }) {
       />
       <div className="absolute inset-0 bg-black/10" />
       <div
-        className="relative bg-white px-12 py-7 text-center"
-        style={{ borderRadius: '24px', boxShadow: '0px 4px 24px rgba(0,0,0,0.16)', minWidth: '260px', maxWidth: '80%' }}
+        className="relative bg-white px-14 py-10 text-center"
+        style={{
+          borderRadius: '40px',
+          boxShadow: '0px 4px 4px rgba(0,0,0,0.25)',
+          minWidth: '260px',
+          maxWidth: '80%',
+        }}
       >
         <h1
-          className="text-dark"
-          style={{ fontFamily: 'var(--font-heading)', fontSize: '40px', lineHeight: '1.1', letterSpacing: '-0.4px' }}
+          style={{
+            fontFamily: 'var(--font-heading)',
+            fontSize: '42px',
+            fontWeight: 400,
+            lineHeight: 1.1,
+            letterSpacing: '-0.42px',
+            color: '#363a45',
+          }}
         >
           {title}
         </h1>
@@ -48,37 +58,66 @@ function ProductHero({ title, heroImage }) {
   )
 }
 
-function TeamSection({ sectionTitle, members }) {
+function TeamSection({ members }) {
   if (!members || members.length === 0) return null
   return (
-    <section className="px-10 py-12 bg-white" style={{ borderBottom: '1px solid rgba(0,0,0,0.07)' }}>
+    <section className="px-10" style={{ background: '#f3f1ea', paddingTop: '60px', paddingBottom: '60px' }}>
       <h2
-        className="text-dark font-semibold text-2xl mb-6"
-        style={{ fontFamily: 'var(--font-body)' }}
+        style={{
+          fontFamily: 'var(--font-heading)',
+          fontSize: '42px',
+          fontWeight: 400,
+          lineHeight: 1.1,
+          letterSpacing: '-0.42px',
+          color: '#363a45',
+          marginBottom: '24px',
+        }}
       >
-        {sectionTitle || 'Team'}
+        Meet the team
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{ gap: '24px' }}>
         {members.map((member, i) => (
           <div
             key={i}
-            className="flex items-center gap-3 bg-white rounded-card px-4 py-2"
-            style={{ boxShadow: 'var(--shadow-card)', minHeight: '72px' }}
+            className="flex items-center bg-white"
+            style={{
+              gap: '12px',
+              borderRadius: '8px',
+              padding: '12px',
+            }}
           >
-            <div
-              className="rounded-full shrink-0 bg-[#e7e8ea]"
-              style={{ width: '48px', height: '48px' }}
-            />
+            {member.photo ? (
+              <img
+                src={`/roadmap/images/team-members/${member.photo}`}
+                alt={member.name}
+                className="shrink-0 object-cover object-top"
+                style={{ width: '48px', height: '48px', borderRadius: '8px' }}
+              />
+            ) : (
+              <div
+                className="shrink-0 bg-[#e7e8ea]"
+                style={{ width: '48px', height: '48px', borderRadius: '8px' }}
+              />
+            )}
             <div>
               <p
-                className="font-semibold text-dark text-sm leading-5"
-                style={{ fontFamily: 'var(--font-body)' }}
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '16px',
+                  fontWeight: 600,
+                  lineHeight: '24px',
+                  color: '#000',
+                }}
               >
                 {member.name}
               </p>
               <p
-                className="text-xs opacity-60 text-dark leading-4 mt-0.5"
-                style={{ fontFamily: 'var(--font-body)' }}
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '14px',
+                  lineHeight: '20px',
+                  color: 'rgba(0,0,0,0.55)',
+                }}
               >
                 {member.title}
               </p>
@@ -93,14 +132,24 @@ function TeamSection({ sectionTitle, members }) {
 function GoalsSection({ sectionTitle, goals }) {
   if (!goals || goals.length === 0) return null
   return (
-    <section className="px-10 py-12 bg-white" style={{ borderBottom: '1px solid rgba(0,0,0,0.07)' }}>
+    <section className="px-10" style={{ background: '#fff', paddingTop: '64px', paddingBottom: '64px' }}>
       <h2
-        className="text-section text-dark mb-8"
-        style={{ fontFamily: 'var(--font-heading)' }}
+        style={{
+          fontFamily: 'var(--font-heading)',
+          fontSize: '42px',
+          fontWeight: 400,
+          lineHeight: 1.1,
+          letterSpacing: '-0.42px',
+          color: '#363a45',
+          marginBottom: '40px',
+        }}
       >
         {sectionTitle || 'Goals'}
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2"
+        style={{ columnGap: '32px', rowGap: '32px' }}
+      >
         {goals.slice(0, 8).map((goal, i) => (
           <GoalCard key={i} goal={goal} />
         ))}
@@ -109,36 +158,62 @@ function GoalsSection({ sectionTitle, goals }) {
   )
 }
 
-function InitiativesSection({ sectionTitle, initiatives }) {
+function InitiativesSection({ initiatives }) {
   if (!initiatives || initiatives.length === 0) return null
   return (
-    <section className="flex flex-col" style={{ background: '#fff' }}>
+    <section style={{ background: '#fff' }}>
       {initiatives.slice(0, 3).map((initiative, i) => (
         <div
           key={i}
-          className="px-10 py-10"
-          style={{ borderTop: i > 0 ? '1px solid rgba(0,0,0,0.07)' : 'none' }}
+          className="px-8"
+          style={{
+            paddingTop: '56px',
+            paddingBottom: '56px',
+            borderTop: '1px solid rgba(0,0,0,0.07)',
+          }}
         >
-          {i === 0 && sectionTitle && (
-            <h2
-              className="text-section text-dark mb-8"
-              style={{ fontFamily: 'var(--font-heading)' }}
-            >
-              {sectionTitle}
-            </h2>
-          )}
-          <h3
-            className="text-dark font-medium mb-4"
-            style={{ fontFamily: 'var(--font-body)', fontSize: '24px', lineHeight: '1.3' }}
-          >
-            {initiative.heading}
-          </h3>
-          <p
-            className="text-dark leading-6 max-w-2xl"
-            style={{ fontFamily: 'var(--font-body)', fontSize: '15px' }}
-          >
-            {initiative.description}
-          </p>
+          <div className="flex items-start" style={{ gap: '32px' }}>
+            {/* Left: label + heading */}
+            <div className="flex-1" style={{ maxWidth: '50%' }}>
+              <p
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '18px',
+                  fontWeight: 600,
+                  lineHeight: '22px',
+                  color: '#b7410e',
+                  marginBottom: '4px',
+                }}
+              >
+                Key Initiative {i + 1}
+              </p>
+              <h2
+                style={{
+                  fontFamily: 'var(--font-heading)',
+                  fontSize: '42px',
+                  fontWeight: 400,
+                  lineHeight: 1.1,
+                  letterSpacing: '-0.42px',
+                  color: '#363a45',
+                }}
+              >
+                {initiative.heading}
+              </h2>
+            </div>
+            {/* Right: description */}
+            <div className="flex-1">
+              <p
+                style={{
+                  fontFamily: 'var(--font-body)',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#505460',
+                }}
+              >
+                {initiative.description}
+              </p>
+            </div>
+          </div>
         </div>
       ))}
     </section>
@@ -178,40 +253,17 @@ export default function ProductPage() {
 
   return (
     <div className="min-h-screen" style={{ background: 'var(--color-beige)' }}>
-      {/* Hero */}
       <ProductHero title={team.title} heroImage={team.hero_image} />
 
-      {/* Product group label */}
-      <div
-        className="px-10 py-4 bg-white"
-        style={{ borderBottom: '1px solid rgba(0,0,0,0.07)' }}
-      >
-        <p
-          className="text-dark opacity-50 text-xs font-semibold uppercase tracking-widest"
-          style={{ fontFamily: 'var(--font-body)', letterSpacing: '0.1em' }}
-        >
-          {team.product_group}
-        </p>
-      </div>
-
-      {/* Team members */}
       <TeamSection members={team.team_members} />
 
-      {/* Gantt */}
       {team.gantt_items && team.gantt_items.length > 0 && (
-        <div style={{ borderBottom: '1px solid rgba(0,0,0,0.07)' }}>
-          <GanttChart title={team.gantt_section_title} items={team.gantt_items} />
-        </div>
+        <GanttChart title={team.gantt_section_title} items={team.gantt_items} />
       )}
 
-      {/* Goals */}
       <GoalsSection sectionTitle={team.goals_section_title} goals={team.goals} />
 
-      {/* Key initiatives */}
-      <InitiativesSection
-        sectionTitle={team.initiatives_section_title}
-        initiatives={team.key_initiatives}
-      />
+      <InitiativesSection initiatives={team.key_initiatives} />
     </div>
   )
 }

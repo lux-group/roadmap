@@ -1,5 +1,5 @@
 // CEO message section — beige background, circular photo, 4 paragraphs
-const ADAM_PHOTO = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&auto=format&fit=crop&q=80'
+const ADAM_PHOTO = '/roadmap/images/adam.jpg'
 
 const PARAGRAPHS = [
   "At Luxury Escapes, we've always believed in dreaming big. What started as a curated travel platform is now evolving into something much more ambitious — a global travel ecosystem powered by intelligence, designed for growth, and built around every customer.",

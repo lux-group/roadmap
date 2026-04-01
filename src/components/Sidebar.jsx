@@ -41,13 +41,22 @@ export default function Sidebar() {
     return `/#${group.id}`
   }
 
+  function handleNavClick(e, group) {
+    setMobileOpen(false)
+    if (isHome) {
+      e.preventDefault()
+      document.getElementById(group.id)?.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   const navContent = (
     <nav
       className="flex flex-col h-full bg-white"
       style={{ borderRight: '1px solid rgba(0,0,0,0.1)' }}
     >
       {/* Logo */}
-      <div
+      <Link
+        to="/"
         className="flex items-center gap-2 px-8 py-7 shrink-0"
         style={{ borderBottom: '1px solid rgba(0,0,0,0.1)' }}
       >
@@ -58,7 +67,7 @@ export default function Sidebar() {
         >
           2026 Roadmap
         </span>
-      </div>
+      </Link>
 
       {/* Nav links */}
       <div className="flex flex-col gap-4 px-8 pt-6 pb-8" style={{ borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
@@ -66,7 +75,7 @@ export default function Sidebar() {
           <a
             key={group.id}
             href={navHref(group)}
-            onClick={() => setMobileOpen(false)}
+            onClick={(e) => handleNavClick(e, group)}
             className="text-dark font-semibold leading-4 hover:opacity-60 transition-opacity"
             style={{
               fontFamily: 'var(--font-body)',
@@ -112,7 +121,7 @@ export default function Sidebar() {
         className="lg:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white"
         style={{ borderBottom: '1px solid rgba(0,0,0,0.1)' }}
       >
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <LELogo />
           <span
             className="font-semibold text-dark text-base"
@@ -120,7 +129,7 @@ export default function Sidebar() {
           >
             2026 Roadmap
           </span>
-        </div>
+        </Link>
         <button
           onClick={() => setMobileOpen(v => !v)}
           aria-label="Toggle menu"

@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Suisse Works (headings) ─────────────────────────────────────── */
+@font-face {
+  font-family: 'Suisse Works';
+  src: url('/roadmap/fonts/suisse-works/SuisseWorks-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Works';
+  src: url('/roadmap/fonts/suisse-works/SuisseWorks-BookItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Works';
+  src: url('/roadmap/fonts/suisse-works/SuisseWorks-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Works';
+  src: url('/roadmap/fonts/suisse-works/SuisseWorks-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Suisse Intl (body / UI) ─────────────────────────────────────── */
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/roadmap/fonts/suisse-intl/SuisseIntl-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/roadmap/fonts/suisse-intl/SuisseIntl-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/roadmap/fonts/suisse-intl/SuisseIntl-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/roadmap/fonts/suisse-intl/SuisseIntl-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/roadmap/fonts/suisse-intl/SuisseIntl-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Suisse Intl';
+  src: url('/roadmap/fonts/suisse-intl/SuisseIntl-Book.otf') format('opentype');
+  font-weight: 450;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── CSS variables ───────────────────────────────────────────────── */
+:root {
+  --color-bg: #ffffff;
+  --color-beige: #f3f1ea;
+  --color-dark: #363a45;
+  --color-border: rgba(0, 0, 0, 0.1);
+  --shadow-card: 0px 0.7px 1.4px rgba(0, 0, 0, 0.07),
+    0px 1.9px 4px rgba(0, 0, 0, 0.05), 0px 4.5px 10px rgba(0, 0, 0, 0.05);
+  --sidebar-width: 250px;
+  --font-heading: 'Suisse Works', Georgia, serif;
+  --font-body: 'Suisse Intl', system-ui, sans-serif;
+}
+
+/* ── Base ────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  background: var(--color-bg);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Typography helpers ──────────────────────────────────────────── */
+.font-heading {
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+.text-hero {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.0;
+  letter-spacing: -0.64px;
+}
+
+.text-section {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: -0.42px;
+}

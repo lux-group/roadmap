@@ -6,9 +6,11 @@ backend:
   name: github
   repo: lux-group/roadmap
   branch: main
-  # Netlify OAuth proxy is used so no self-hosted auth server is required
+  # Netlify OAuth proxy — site_domain must match the Netlify site where
+  # the GitHub OAuth app is registered (e.g. your-site.netlify.app)
   base_url: https://api.netlify.com
   auth_endpoint: auth
+  site_domain: YOUR_NETLIFY_SITE.netlify.app
 
 media_folder: public/uploads
 public_folder: /uploads

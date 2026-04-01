@@ -10,7 +10,7 @@ backend:
   # the GitHub OAuth app is registered (e.g. your-site.netlify.app)
   base_url: https://api.netlify.com
   auth_endpoint: auth
-  site_domain: YOUR_NETLIFY_SITE.netlify.app
+  site_domain: luxury-pasca-b645b1.netlify.app
 
 media_folder: public/uploads
 public_folder: /uploads

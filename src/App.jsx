@@ -6,7 +6,7 @@ import ProductPage from './pages/ProductPage'
 
 export default function App() {
   return (
-    <BrowserRouter basename="/roadmap">
+    <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />

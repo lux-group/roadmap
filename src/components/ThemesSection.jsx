@@ -1,11 +1,11 @@
 // Themes for 2026 — white background, 3×2 grid
 const THEMES = [
-  { title: 'AI as an Efficiency Driver' },
-  { title: 'Increase Supply & Improve Margin' },
-  { title: 'Loyalty & Continued Engagement' },
-  { title: 'Platform, AI Tools & Infrastructure for Scale' },
-  { title: 'AI as an International Growth Driver' },
-  { title: 'AI as a Growth Driver' },
+  { title: 'AI as an Efficiency Driver', image: '/roadmap/images/themes/ai-efficiency-driver.jpg' },
+  { title: 'Increase Supply & Improve Margin', image: '/roadmap/images/themes/increase-supply-improve-margin.jpg' },
+  { title: 'Loyalty & Continued Engagement', image: '/roadmap/images/themes/loyalty-continued-engagement.jpg' },
+  { title: 'Platform, AI Tools & Infrastructure for Scale', image: '/roadmap/images/themes/platform-ai-tools-infrastructure.jpg' },
+  { title: 'AI as an International Growth Driver', image: '/roadmap/images/themes/ai-international-growth-driver.jpg' },
+  { title: 'AI as a Growth Driver', image: '/roadmap/images/themes/ai-growth-driver.jpg' },
 ]
 
 const DESCRIPTION = 'Descriptions to be updated by content owners.'
@@ -21,10 +21,12 @@ export default function ThemesSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {THEMES.map((theme, i) => (
             <div key={i} className="flex flex-col gap-5">
-              {/* Image placeholder */}
-              <div
-                className="rounded-card shrink-0 w-full"
-                style={{ height: '211px', background: '#e7e8ea' }}
+              {/* Theme image */}
+              <img
+                src={theme.image}
+                alt={theme.title}
+                className="rounded-card shrink-0 w-full object-cover"
+                style={{ height: '211px' }}
               />
               {/* Text */}
               <div className="flex flex-col gap-2">

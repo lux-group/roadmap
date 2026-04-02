@@ -2,15 +2,6 @@ import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
 import { PRODUCT_GROUPS } from '../data/teams'
 
-// Luxury Escapes circular mark (inline SVG)
-function LELogo() {
-  return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Luxury Escapes">
-      <circle cx="16" cy="16" r="16" fill="#363a45"/>
-      <text x="16" y="20" textAnchor="middle" fill="white" fontSize="10" fontFamily="'Suisse Intl', sans-serif" fontWeight="700" letterSpacing="0.5">LE</text>
-    </svg>
-  )
-}
 
 function MenuIcon() {
   return (
@@ -31,104 +22,147 @@ function CloseIcon() {
   )
 }
 
-export default function Sidebar() {
+function ChevronUp() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 15L12 9L18 15" stroke="#868993" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+}
+
+function ChevronDown() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 9L12 15L18 9" stroke="#868993" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  )
+}
+
+function NavContent({ onClose, hideLogo = false }) {
   const location = useLocation()
-  const isHome = location.pathname === '/'
-  const [mobileOpen, setMobileOpen] = useState(false)
 
-  function navHref(group) {
-    if (isHome) return `#${group.id}`
-    return `/#${group.id}`
+  const [expanded, setExpanded] = useState(() =>
+    Object.fromEntries(PRODUCT_GROUPS.map(g => [g.id, false]))
+  )
+
+  function toggleSection(id) {
+    setExpanded(prev => ({ ...prev, [id]: !prev[id] }))
   }
 
-  function handleNavClick(e, group) {
-    setMobileOpen(false)
-    if (isHome) {
-      e.preventDefault()
-      document.getElementById(group.id)?.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
-  const navContent = (
-    <nav
-      className="flex flex-col h-full bg-white"
-      style={{ borderRight: '1px solid rgba(0,0,0,0.1)' }}
-    >
-      {/* Logo */}
-      <Link
-        to="/"
-        className="flex items-center gap-2 px-8 py-7 shrink-0"
-        style={{ borderBottom: '1px solid rgba(0,0,0,0.1)' }}
-      >
-        <LELogo />
-        <span
-          className="text-dark font-body font-semibold text-base leading-6 whitespace-nowrap"
-          style={{ fontFamily: 'var(--font-body)' }}
-        >
-          2026 Roadmap
-        </span>
-      </Link>
-
-      {/* Nav links */}
-      <div className="flex flex-col gap-4 px-8 pt-6 pb-8" style={{ borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
-        {PRODUCT_GROUPS.map(group => (
-          <a
-            key={group.id}
-            href={navHref(group)}
-            onClick={(e) => handleNavClick(e, group)}
-            className="text-dark font-semibold leading-4 hover:opacity-60 transition-opacity"
-            style={{
-              fontFamily: 'var(--font-body)',
-              fontSize: '12px',
-              color: 'var(--color-dark)',
-            }}
-          >
-            {group.label}
-          </a>
-        ))}
-      </div>
-
-      {/* Directory link */}
-      <div className="px-8 pt-5">
+  return (
+    <nav className="flex flex-col h-full bg-white">
+      {/* Logo — hidden in mobile drawer since the top bar already shows it */}
+      {!hideLogo && (
         <Link
-          to="/directory"
-          onClick={() => setMobileOpen(false)}
-          className="text-dark font-semibold hover:opacity-60 transition-opacity"
-          style={{
-            fontFamily: 'var(--font-body)',
-            fontSize: '12px',
-            color: 'var(--color-dark)',
-          }}
+          to="/"
+          className="flex items-center px-8 py-7 shrink-0"
+          style={{ borderBottom: '0.5px solid rgba(0,0,0,0.1)' }}
+          onClick={onClose}
         >
-          Full Directory →
+          <img
+            src="/roadmap/images/logos/Logo_Roadmap2026.png"
+            alt="2026 Roadmap"
+            style={{ height: '32px', width: 'auto' }}
+          />
         </Link>
+      )}
+
+      {/* Collapsible sections */}
+      <div className="flex-1 overflow-y-auto" style={{ paddingTop: '8px' }}>
+        {PRODUCT_GROUPS.map(group => {
+          const isExpanded = expanded[group.id]
+          return (
+            <div
+              key={group.id}
+              style={{ borderBottom: '0.5px solid #d4d5d8' }}
+            >
+              {/* Section header — toggle button */}
+              <button
+                onClick={() => toggleSection(group.id)}
+                className="flex items-center gap-2 w-full px-3 rounded-lg"
+                style={{ height: '44px', paddingTop: 0, paddingBottom: 0 }}
+              >
+                <span
+                  className="flex-1 text-left uppercase tracking-[0.7px]"
+                  style={{
+                    fontFamily: 'var(--font-body)',
+                    fontSize: '11px',
+                    fontWeight: 500,
+                    color: '#868993',
+                    lineHeight: '14px',
+                  }}
+                >
+                  {group.label}
+                </span>
+                {isExpanded ? <ChevronUp /> : <ChevronDown />}
+              </button>
+
+              {/* Team items */}
+              {isExpanded && (
+                <div className="pb-2">
+                  {group.teams.map(team => {
+                    const isActive = location.pathname === `/product/${team.slug}`
+                    return (
+                      <Link
+                        key={team.slug}
+                        to={`/product/${team.slug}`}
+                        onClick={onClose}
+                        className="flex items-center gap-2 w-full px-3 rounded-lg transition-colors"
+                        style={{
+                          height: '40px',
+                          fontFamily: 'var(--font-body)',
+                          fontSize: '12px',
+                          fontWeight: 400,
+                          color: '#363a45',
+                          lineHeight: '16px',
+                          backgroundColor: isActive ? '#f3f3f4' : undefined,
+                          textDecoration: 'none',
+                        }}
+                        onMouseEnter={e => { if (!isActive) e.currentTarget.style.backgroundColor = '#f3f3f4' }}
+                        onMouseLeave={e => { if (!isActive) e.currentTarget.style.backgroundColor = '' }}
+                      >
+                        {team.name}
+                      </Link>
+                    )
+                  })}
+                </div>
+              )}
+            </div>
+          )
+        })}
       </div>
+
     </nav>
   )
+}
+
+export default function Sidebar() {
+  const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
     <>
       {/* Desktop sidebar */}
       <aside
         className="hidden lg:flex flex-col sticky top-0 h-screen shrink-0 overflow-y-auto"
-        style={{ width: 'var(--sidebar-width)' }}
+        style={{
+          width: 'var(--sidebar-width)',
+          borderRight: '1px solid rgba(0,0,0,0.1)',
+        }}
       >
-        {navContent}
+        <NavContent onClose={() => {}} />
       </aside>
 
-      {/* Mobile top bar */}
+      {/* Mobile/tablet top bar */}
       <div
         className="lg:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white"
         style={{ borderBottom: '1px solid rgba(0,0,0,0.1)' }}
       >
-        <Link to="/" className="flex items-center gap-2">
-          <LELogo />
-          <span
-            className="font-semibold text-dark text-base"
-            style={{ fontFamily: 'var(--font-body)' }}
-          >
-            2026 Roadmap
-          </span>
+        <Link to="/">
+          <img
+            src="/roadmap/images/logos/Logo_Roadmap2026.png"
+            alt="2026 Roadmap"
+            style={{ height: '28px', width: 'auto' }}
+          />
         </Link>
         <button
           onClick={() => setMobileOpen(v => !v)}
@@ -139,39 +173,15 @@ export default function Sidebar() {
         </button>
       </div>
 
-      {/* Mobile drawer */}
+      {/* Mobile/tablet drawer — logo hidden, nav items only */}
       {mobileOpen && (
         <div className="lg:hidden fixed inset-0 z-40 flex">
           <div
-            className="w-64 h-full bg-white overflow-y-auto pt-16 shadow-xl"
-            style={{ borderRight: '1px solid rgba(0,0,0,0.1)' }}
+            className="w-80 h-full bg-white overflow-y-auto shadow-xl"
+            style={{ paddingTop: '57px' }}
           >
-            {/* Nav links */}
-            <div className="flex flex-col gap-4 px-8 pt-6 pb-8" style={{ borderBottom: '1px solid rgba(0,0,0,0.1)' }}>
-              {PRODUCT_GROUPS.map(group => (
-                <a
-                  key={group.id}
-                  href={navHref(group)}
-                  onClick={() => setMobileOpen(false)}
-                  className="text-dark font-semibold hover:opacity-60 transition-opacity"
-                  style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'var(--color-dark)' }}
-                >
-                  {group.label}
-                </a>
-              ))}
-            </div>
-            <div className="px-8 pt-5">
-              <Link
-                to="/directory"
-                onClick={() => setMobileOpen(false)}
-                className="text-dark font-semibold hover:opacity-60 transition-opacity"
-                style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'var(--color-dark)' }}
-              >
-                Full Directory →
-              </Link>
-            </div>
+            <NavContent onClose={() => setMobileOpen(false)} hideLogo />
           </div>
-          {/* Backdrop */}
           <div className="flex-1 bg-black/30" onClick={() => setMobileOpen(false)} />
         </div>
       )}

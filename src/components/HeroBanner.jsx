@@ -14,19 +14,11 @@ function PlayIcon() {
 
 function LEWordmark() {
   return (
-    <div className="flex items-center gap-2">
-      {/* Circular mark */}
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="14" cy="14" r="14" fill="#363a45"/>
-        <text x="14" y="18" textAnchor="middle" fill="white" fontSize="9" fontFamily="'Suisse Intl', sans-serif" fontWeight="700" letterSpacing="0.5">LE</text>
-      </svg>
-      <span
-        className="font-semibold text-dark tracking-widest text-sm"
-        style={{ fontFamily: 'var(--font-body)', letterSpacing: '0.12em', textTransform: 'uppercase' }}
-      >
-        Luxury Escapes
-      </span>
-    </div>
+    <img
+      src="/roadmap/images/logos/LE-Logo.png"
+      alt="Luxury Escapes"
+      style={{ height: '32px', width: 'auto' }}
+    />
   )
 }
 

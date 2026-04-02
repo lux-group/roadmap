@@ -1,7 +1,7 @@
 ---
 title: "Self Service"
 slug: "self-service"
-product_group: "Customer Service & Sales Experience (CSX)"
+product_group: "Customer Service & Sales Experience"
 hero_image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Min Pangastur"

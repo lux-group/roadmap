@@ -11,9 +11,8 @@ function parseTeams() {
   const teams = {}
   for (const [path, raw] of Object.entries(RAW_FILES)) {
     const { data } = matter(raw)
-    if (data.slug) {
-      teams[data.slug] = data
-    }
+    const slug = path.split('/').pop().replace('.md', '')
+    teams[slug] = { ...data, slug }
   }
   return teams
 }

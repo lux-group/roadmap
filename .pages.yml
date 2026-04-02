@@ -7,6 +7,7 @@ content:
     label: Teams
     label_singular: Team
     path: src/content/teams
+    filename: "{title | slugify}"
     type: collection
     fields:
       - name: title
@@ -14,15 +15,20 @@ content:
         type: string
         required: true
 
-      - name: slug
-        label: Slug
-        type: string
-        required: true
-
       - name: product_group
         label: Product Group
-        type: string
+        type: select
         required: true
+        options:
+          values:
+            - "Commercial Platforms"
+            - "Customer Service & Sales Experience"
+            - "Data & Analytics"
+            - "Distribution & Partnerships"
+            - "Engineering Excellency & Infrastructure"
+            - "Growth & Customer Lifecycle"
+            - "Online CX"
+            - "Supply"
 
       - name: hero_image
         label: Hero Image
@@ -31,6 +37,7 @@ content:
       - name: team_members
         label: Team Members
         type: list
+        key: name
         fields:
           - name: name
             label: Name
@@ -45,13 +52,10 @@ content:
               input: public/images/team-members
               output: /roadmap/images/team-members
 
-      - name: gantt_section_title
-        label: Roadmap Section Title
-        type: string
-
       - name: gantt_items
         label: Roadmap Items
         type: list
+        key: title
         fields:
           - name: title
             label: Title
@@ -67,13 +71,10 @@ content:
             options:
               format: YYYY-MM-DD
 
-      - name: goals_section_title
-        label: Goals Section Title
-        type: string
-
       - name: goals
         label: Goals
         type: list
+        key: headline
         fields:
           - name: headline
             label: Headline
@@ -85,13 +86,10 @@ content:
             label: To (target)
             type: string
 
-      - name: initiatives_section_title
-        label: Initiatives Section Title
-        type: string
-
       - name: key_initiatives
         label: Key Initiatives
         type: list
+        key: heading
         fields:
           - name: heading
             label: Heading

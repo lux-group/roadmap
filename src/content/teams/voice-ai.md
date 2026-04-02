@@ -36,14 +36,11 @@ gantt_items:
 goals_section_title: "Goals"
 goals:
   - headline: "Scale voice operations"
-    from_value: "Current: 100 calls/day"
-    to_value: "Target: 300 calls/day"
+    description: "Current: 100 calls/day → Target: 300 calls/day"
   - headline: "Increase good calls"
-    from_value: "Current: 60%"
-    to_value: "Target: 90%"
+    description: "Current: 60% → Target: 90%"
   - headline: "Increase deflection"
-    from_value: "Current: 10%"
-    to_value: "Target: 25%"
+    description: "Current: 10% → Target: 25%"
 initiatives_section_title: "Key Initiatives"
 key_initiatives:
   - heading: "Scale Voice AI to 24/7 operations"

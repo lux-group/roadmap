@@ -18,14 +18,11 @@ gantt_items:
 goals_section_title: "Goals"
 goals:
   - headline: "Increase conversion rate from search"
-    from_value: "Current: 0.78%"
-    to_value: "Target: 0.80% (3% uplift)"
+    description: "Current: 0.78% → Target: 0.80% (3% uplift)"
   - headline: "Reduce average click position"
-    from_value: "Current: 4th position"
-    to_value: "Target: 3rd position"
+    description: "Current: 4th position → Target: 3rd position"
   - headline: "Increase click-through rate"
-    from_value: "Current: 24%"
-    to_value: "Target: 26% (8% uplift)"
+    description: "Current: 24% → Target: 26% (8% uplift)"
 initiatives_section_title: "Key Initiatives"
 key_initiatives:
   - heading: "Improve NLS Results"

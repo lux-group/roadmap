@@ -18,14 +18,11 @@ gantt_items:
 goals_section_title: "Goals"
 goals:
   - headline: "Support multi-destination and complex itinerary planning"
-    from_value: "TripPlanner users skew towards complicated multi-destination trips"
-    to_value: "Tool can make recommendations based on full customer plan and complex travel needs"
+    description: "TripPlanner users skew towards complicated multi-destination trips → Tool can make recommendations based on full customer plan and complex travel needs"
   - headline: "Expand TripPlanner reach and discoverability"
-    from_value: "MVP is desktop-only with limited awareness"
-    to_value: "Available on mobile web with active product marketing driving adoption"
+    description: "MVP is desktop-only with limited awareness → Available on mobile web with active product marketing driving adoption"
   - headline: "Enable trip collaboration and sharing"
-    from_value: "Current sharing capabilities limited"
-    to_value: "Customers can easily share trips with travel companions"
+    description: "Current sharing capabilities limited → Customers can easily share trips with travel companions"
 initiatives_section_title: "Key Initiatives"
 key_initiatives:
   - heading: "Chat TripPlanner on Mobile Web"

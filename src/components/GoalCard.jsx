@@ -21,7 +21,7 @@ export default function GoalCard({ goal }) {
           marginTop: '4px',
         }}
       >
-        {goal.from_value} → {goal.to_value}
+        {goal.description}
       </p>
     </div>
   )

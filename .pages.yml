@@ -83,11 +83,8 @@ content:
           - name: headline
             label: Headline
             type: string
-          - name: from_value
-            label: From (current state)
-            type: string
-          - name: to_value
-            label: To (target)
+          - name: description
+            label: Description
             type: string
 
       - name: key_initiatives

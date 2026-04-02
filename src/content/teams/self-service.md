@@ -27,14 +27,11 @@ gantt_items:
 goals_section_title: "Goals"
 goals:
   - headline: "Reduce CS cost per order"
-    from_value: "Current: baseline"
-    to_value: "Target: 20% YoY reduction"
+    description: "Current: baseline → Target: 20% YoY reduction"
   - headline: "Increase LESA resolution with human intervention"
-    from_value: "Current: 45%"
-    to_value: "Target: 30%"
+    description: "Current: 45% → Target: 30%"
   - headline: "Increase LESA deflection"
-    from_value: "Current: 42%"
-    to_value: "Target: 55%"
+    description: "Current: 42% → Target: 55%"
 initiatives_section_title: "Key Initiatives"
 key_initiatives:
   - heading: "Self-Service Education"

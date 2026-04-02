@@ -1,16 +1,9 @@
 // Themes for 2026 — white background, 3×2 grid
-const THEMES = [
-  { title: 'AI as an Efficiency Driver', image: '/roadmap/images/themes/ai-efficiency-driver.jpg' },
-  { title: 'Increase Supply & Improve Margin', image: '/roadmap/images/themes/increase-supply-improve-margin.jpg' },
-  { title: 'Loyalty & Continued Engagement', image: '/roadmap/images/themes/loyalty-continued-engagement.jpg' },
-  { title: 'Platform, AI Tools & Infrastructure for Scale', image: '/roadmap/images/themes/platform-ai-tools-infrastructure.jpg' },
-  { title: 'AI as an International Growth Driver', image: '/roadmap/images/themes/ai-international-growth-driver.jpg' },
-  { title: 'AI as a Growth Driver', image: '/roadmap/images/themes/ai-growth-driver.jpg' },
-]
-
-const DESCRIPTION = 'Descriptions to be updated by content owners.'
+import themesData from '../content/homepage/themes.json'
 
 export default function ThemesSection() {
+  const { themes } = themesData
+
   return (
     <section className="flex justify-center py-16 px-6 bg-white">
       <div className="w-full max-w-[1040px] flex flex-col gap-10">
@@ -19,7 +12,7 @@ export default function ThemesSection() {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {THEMES.map((theme, i) => (
+          {themes.map((theme, i) => (
             <div key={i} className="flex flex-col gap-5">
               {/* Theme image */}
               <img
@@ -40,7 +33,7 @@ export default function ThemesSection() {
                   className="text-dark leading-5"
                   style={{ fontFamily: 'var(--font-body)', fontSize: '14px' }}
                 >
-                  {DESCRIPTION}
+                  {theme.description}
                 </p>
               </div>
             </div>

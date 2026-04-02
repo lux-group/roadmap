@@ -1,0 +1,34 @@
+{
+  "themes": [
+    {
+      "title": "AI as an Efficiency Driver",
+      "description": "Descriptions to be updated by content owners.",
+      "image": "/roadmap/images/themes/ai-efficiency-driver.jpg"
+    },
+    {
+      "title": "Increase Supply & Improve Margin",
+      "description": "Descriptions to be updated by content owners.",
+      "image": "/roadmap/images/themes/increase-supply-improve-margin.jpg"
+    },
+    {
+      "title": "Loyalty & Continued Engagement",
+      "description": "Descriptions to be updated by content owners.",
+      "image": "/roadmap/images/themes/loyalty-continued-engagement.jpg"
+    },
+    {
+      "title": "Platform, AI Tools & Infrastructure for Scale",
+      "description": "Descriptions to be updated by content owners.",
+      "image": "/roadmap/images/themes/platform-ai-tools-infrastructure.jpg"
+    },
+    {
+      "title": "AI as an International Growth Driver",
+      "description": "Descriptions to be updated by content owners.",
+      "image": "/roadmap/images/themes/ai-international-growth-driver.jpg"
+    },
+    {
+      "title": "AI as a Growth Driver",
+      "description": "Descriptions to be updated by content owners.",
+      "image": "/roadmap/images/themes/ai-growth-driver.jpg"
+    }
+  ]
+}

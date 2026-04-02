@@ -3,6 +3,87 @@ media:
   output: /roadmap/images
 
 content:
+  - name: ceo
+    label: CEO Message
+    path: src/content/homepage
+    filename: ceo
+    extension: json
+    type: file
+    fields:
+      - name: name
+        label: Name
+        type: string
+      - name: job_title
+        label: Job Title
+        type: string
+      - name: photo
+        label: Photo
+        type: image
+      - name: description
+        label: Message
+        type: text
+
+  - name: themes
+    label: Themes for 2026
+    path: src/content/homepage
+    filename: themes
+    extension: json
+    type: file
+    fields:
+      - name: themes
+        label: Themes
+        type: object
+        list:
+          collapsible:
+            summary: "{title}"
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: image
+            label: Image
+            type: image
+
+  - name: product-groups
+    label: Product Groups
+    path: src/content
+    filename: product-groups
+    extension: json
+    type: file
+    fields:
+      - name: groups
+        label: Groups
+        type: object
+        list:
+          collapsible:
+            summary: "{label}"
+        fields:
+          - name: id
+            label: ID
+            type: string
+          - name: label
+            label: Label
+            type: string
+          - name: teams
+            label: Teams
+            type: object
+            list:
+              collapsible:
+                summary: "{name}"
+            fields:
+              - name: name
+                label: Name
+                type: string
+              - name: slug
+                label: Slug
+                type: string
+              - name: icon
+                label: Icon Filename
+                type: string
+
   - name: teams
     label: Teams
     path: src/content/teams
@@ -13,21 +94,6 @@ content:
         label: Title
         type: string
         required: true
-
-      - name: product_group
-        label: Product Group
-        type: select
-        required: true
-        options:
-          values:
-            - "Commercial Platforms"
-            - "Customer Service & Sales Experience"
-            - "Data & Analytics"
-            - "Distribution & Partnerships"
-            - "Engineering Excellency & Infrastructure"
-            - "Growth & Customer Lifecycle"
-            - "Online CX"
-            - "Supply"
 
       - name: hero_image
         label: Hero Image

@@ -31,7 +31,7 @@ content:
 
       - name: hero_image
         label: Hero Image
-        type: image
+        type: string
 
       - name: team_members
         label: Team Members

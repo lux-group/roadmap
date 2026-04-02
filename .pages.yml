@@ -5,9 +5,8 @@ media:
 content:
   - name: teams
     label: Teams
-    label_singular: Team
     path: src/content/teams
-    filename: "{title | slugify}"
+    extension: md
     type: collection
     fields:
       - name: title
@@ -36,8 +35,10 @@ content:
 
       - name: team_members
         label: Team Members
-        type: list
-        key: name
+        type: object
+        list:
+          collapsible:
+            summary: "{name}"
         fields:
           - name: name
             label: Name
@@ -49,13 +50,14 @@ content:
             label: Photo
             type: image
             options:
-              input: public/images/team-members
-              output: /roadmap/images/team-members
+              path: team-members
 
       - name: gantt_items
         label: Roadmap Items
-        type: list
-        key: title
+        type: object
+        list:
+          collapsible:
+            summary: "{title}"
         fields:
           - name: title
             label: Title
@@ -73,8 +75,10 @@ content:
 
       - name: goals
         label: Goals
-        type: list
-        key: headline
+        type: object
+        list:
+          collapsible:
+            summary: "{headline}"
         fields:
           - name: headline
             label: Headline
@@ -88,8 +92,10 @@ content:
 
       - name: key_initiatives
         label: Key Initiatives
-        type: list
-        key: heading
+        type: object
+        list:
+          collapsible:
+            summary: "{heading}"
         fields:
           - name: heading
             label: Heading

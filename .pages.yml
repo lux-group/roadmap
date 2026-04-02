@@ -66,12 +66,12 @@ content:
             label: Start Date
             type: date
             options:
-              format: YYYY-MM-DD
+              format: yyyy-MM-dd
           - name: end_date
             label: End Date
             type: date
             options:
-              format: YYYY-MM-DD
+              format: yyyy-MM-dd
 
       - name: goals
         label: Goals

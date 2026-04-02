@@ -6,7 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&au
 team_members:
   - name: "Nick Griffith"
     title: "Product Manager"
-    photo: "nick-griffith.jpg"
+    photo: "/roadmap/images/team-members/nick-griffith.jpg"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Placeholder content"

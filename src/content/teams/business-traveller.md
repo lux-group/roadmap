@@ -6,7 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600
 team_members:
   - name: "Jake Gerstel"
     title: "Product Manager"
-    photo: "jake-gerstel.jpg"
+    photo: "/roadmap/images/team-members/jake-gerstel.jpg"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Placeholder content"

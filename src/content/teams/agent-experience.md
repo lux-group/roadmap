@@ -6,7 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1553775282-20af80779df7?w=1600&au
 team_members:
   - name: "Min Pangastur"
     title: "Product Manager"
-    photo: "min-pangastur.jpg"
+    photo: "/roadmap/images/team-members/min-pangastur.jpg"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Agent Desktop Consolidation"

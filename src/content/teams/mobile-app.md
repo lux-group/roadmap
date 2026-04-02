@@ -6,7 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=1600
 team_members:
   - name: "Tom Strathern"
     title: "Product Manager"
-    photo: "tom-strathern.png"
+    photo: "/roadmap/images/team-members/tom-strathern.png"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Placeholder content"

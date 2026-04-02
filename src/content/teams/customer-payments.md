@@ -6,7 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&au
 team_members:
   - name: "Sean Novis"
     title: "Product Manager"
-    photo: "sean-novis.jpg"
+    photo: "/roadmap/images/team-members/sean-novis.jpg"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Placeholder content"

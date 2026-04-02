@@ -6,7 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600
 team_members:
   - name: "Jacob Meyer"
     title: "Product Manager"
-    photo: "jacob-meyer.png"
+    photo: "/roadmap/images/team-members/jacob-meyer.png"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Placeholder content"

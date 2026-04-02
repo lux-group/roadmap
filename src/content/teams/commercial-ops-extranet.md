@@ -6,7 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600
 team_members:
   - name: "Sean Novis"
     title: "Product Manager"
-    photo: "sean-novis.jpg"
+    photo: "/roadmap/images/team-members/sean-novis.jpg"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Deal Workflow Automation"

@@ -6,7 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=1600
 team_members:
   - name: "Chiamaka Ibeme"
     title: "Product Manager"
-    photo: "chiamaka-ibeme.jpg"
+    photo: "/roadmap/images/team-members/chiamaka-ibeme.jpg"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Placeholder content"

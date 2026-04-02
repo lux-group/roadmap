@@ -6,10 +6,10 @@ hero_image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600
 team_members:
   - name: "Gregory Fine"
     title: "Product Manager"
-    photo: "gregory-fine.png"
+    photo: "/roadmap/images/team-members/gregory-fine.png"
   - name: "James Ball"
     title: "Product Manager"
-    photo: "james-ball.jpg"
+    photo: "/roadmap/images/team-members/james-ball.jpg"
   - name: "Nish Shrestha"
     title: "Product Manager"
 gantt_section_title: "2026 Roadmap"

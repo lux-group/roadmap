@@ -6,7 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1600&au
 team_members:
   - name: "Hunter Li"
     title: "Product Manager"
-    photo: "hunter-li.png"
+    photo: "/roadmap/images/team-members/hunter-li.png"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Placeholder content"

@@ -6,7 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1600
 team_members:
   - name: "William Ritossa"
     title: "Product Manager"
-    photo: "william-ritossa.png"
+    photo: "/roadmap/images/team-members/william-ritossa.png"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Placeholder content"

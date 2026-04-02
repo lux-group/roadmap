@@ -1,0 +1,101 @@
+media:
+  input: public/images
+  output: /roadmap/images
+
+content:
+  - name: teams
+    label: Teams
+    label_singular: Team
+    path: src/content/teams
+    type: collection
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+
+      - name: slug
+        label: Slug
+        type: string
+        required: true
+
+      - name: product_group
+        label: Product Group
+        type: string
+        required: true
+
+      - name: hero_image
+        label: Hero Image
+        type: image
+
+      - name: team_members
+        label: Team Members
+        type: list
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: title
+            label: Title
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+            options:
+              input: public/images/team-members
+              output: /roadmap/images/team-members
+
+      - name: gantt_section_title
+        label: Roadmap Section Title
+        type: string
+
+      - name: gantt_items
+        label: Roadmap Items
+        type: list
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: start_date
+            label: Start Date
+            type: date
+            options:
+              format: YYYY-MM-DD
+          - name: end_date
+            label: End Date
+            type: date
+            options:
+              format: YYYY-MM-DD
+
+      - name: goals_section_title
+        label: Goals Section Title
+        type: string
+
+      - name: goals
+        label: Goals
+        type: list
+        fields:
+          - name: headline
+            label: Headline
+            type: string
+          - name: from_value
+            label: From (current state)
+            type: string
+          - name: to_value
+            label: To (target)
+            type: string
+
+      - name: initiatives_section_title
+        label: Initiatives Section Title
+        type: string
+
+      - name: key_initiatives
+        label: Key Initiatives
+        type: list
+        fields:
+          - name: heading
+            label: Heading
+            type: string
+          - name: description
+            label: Description
+            type: text

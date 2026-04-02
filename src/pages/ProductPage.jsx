@@ -88,7 +88,7 @@ function TeamSection({ members }) {
           >
             {member.photo ? (
               <img
-                src={`/roadmap/images/team-members/${member.photo}`}
+                src={member.photo}
                 alt={member.name}
                 className="shrink-0 object-cover object-top"
                 style={{ width: '48px', height: '48px', borderRadius: '8px' }}

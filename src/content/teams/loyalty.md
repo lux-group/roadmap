@@ -6,10 +6,10 @@ hero_image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1600&au
 team_members:
   - name: "Gus Stone-Heesh"
     title: "Product Manager"
-    photo: "gus-stone-heesh.png"
+    photo: "/roadmap/images/team-members/gus-stone-heesh.png"
   - name: "James Nevett"
     title: "Product Manager"
-    photo: "james-nevett.jpg"
+    photo: "/roadmap/images/team-members/james-nevett.jpg"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Placeholder content"

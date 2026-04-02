@@ -6,7 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600
 team_members:
   - name: "Renan Murta"
     title: "Product Manager"
-    photo: "renan-murta.jpg"
+    photo: "/roadmap/images/team-members/renan-murta.jpg"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Placeholder content"

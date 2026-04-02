@@ -2,7 +2,7 @@
 title: "Flights"
 slug: "flights"
 product_group: "Supply"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Sriram Shankar"
     title: "Product Manager"

@@ -2,7 +2,7 @@
 title: "Special Projects"
 slug: "special-projects"
 product_group: "Supply"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1493612276216-ee3925520721?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Placeholder content"
     title: "Placeholder content"

@@ -2,7 +2,7 @@
 title: "Extranet (Partner Central)"
 slug: "commercial-platforms-extranet"
 product_group: "Commercial Platforms"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Laura Jennings"
     title: "Group Product Manager"

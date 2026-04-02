@@ -2,7 +2,7 @@
 title: "Agent Hub"
 slug: "agent-hub"
 product_group: "Distribution & Partnerships"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Tom Farmery"
     title: "Product Manager"

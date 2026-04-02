@@ -2,7 +2,7 @@
 title: "Trip Planner"
 slug: "trip-planner"
 product_group: "Online CX"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "William Ritossa"
     title: "Product Manager"

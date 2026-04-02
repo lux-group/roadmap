@@ -2,7 +2,7 @@
 title: "Tours"
 slug: "tours"
 product_group: "Supply"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Renan Murta"
     title: "Product Manager"

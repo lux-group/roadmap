@@ -2,7 +2,7 @@
 title: "Customer Lifecycle"
 slug: "customer-lifecycle"
 product_group: "Growth & Customer Lifecycle"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Placeholder content"
     title: "Placeholder content"

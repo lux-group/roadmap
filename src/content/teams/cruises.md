@@ -2,7 +2,7 @@
 title: "Cruises"
 slug: "cruises"
 product_group: "Supply"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1548574505-5e239809ee19?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Vivi Mi"
     title: "Product Manager"

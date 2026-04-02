@@ -2,7 +2,7 @@
 title: "Agent Experience"
 slug: "agent-experience"
 product_group: "Customer Service & Sales Experience (CSX)"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1553775282-20af80779df7?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Min Pangastur"
     title: "Product Manager"

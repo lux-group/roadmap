@@ -2,7 +2,7 @@
 title: "Distribution APIs"
 slug: "distribution-apis"
 product_group: "Distribution & Partnerships"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Placeholder content"
     title: "Placeholder content"

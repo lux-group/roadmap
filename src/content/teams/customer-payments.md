@@ -2,7 +2,7 @@
 title: "Customer Payments"
 slug: "customer-payments"
 product_group: "Online CX"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Sean Novis"
     title: "Product Manager"

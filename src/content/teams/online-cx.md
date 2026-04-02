@@ -2,7 +2,7 @@
 title: "Online CX"
 slug: "online-cx"
 product_group: "Online CX"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Placeholder content"
     title: "Placeholder content"

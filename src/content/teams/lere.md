@@ -2,7 +2,7 @@
 title: "LERE"
 slug: "lere"
 product_group: "Online CX"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Jacob Meyer"
     title: "Product Manager"

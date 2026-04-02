@@ -2,7 +2,7 @@
 title: "Extranet (Partner Central)"
 slug: "extranet-partner-central"
 product_group: "Growth & Customer Lifecycle"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Placeholder content"
     title: "Placeholder content"

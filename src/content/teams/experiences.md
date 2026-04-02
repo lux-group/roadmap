@@ -2,7 +2,7 @@
 title: "Experiences"
 slug: "experiences"
 product_group: "Supply"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Renan Murta"
     title: "Product Manager"

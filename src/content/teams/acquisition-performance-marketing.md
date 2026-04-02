@@ -2,7 +2,7 @@
 title: "Acquisition & Performance Marketing"
 slug: "acquisition-performance-marketing"
 product_group: "Growth & Customer Lifecycle"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Placeholder content"
     title: "Placeholder content"

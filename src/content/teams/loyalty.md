@@ -2,7 +2,7 @@
 title: "Loyalty"
 slug: "loyalty"
 product_group: "Online CX"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Gus Stone-Heesh"
     title: "Product Manager"

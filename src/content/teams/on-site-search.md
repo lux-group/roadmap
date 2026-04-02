@@ -2,7 +2,7 @@
 title: "On-Site Search"
 slug: "on-site-search"
 product_group: "Online CX"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Hunter Li"
     title: "Product Manager"

@@ -2,7 +2,7 @@
 title: "Data & Finance"
 slug: "data-finance"
 product_group: "Data & Analytics"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Placeholder content"
     title: "Placeholder content"

@@ -2,7 +2,7 @@
 title: "Ancillaries"
 slug: "ancillaries"
 product_group: "Supply"
-hero_image: ""
+hero_image: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=1600&auto=format&fit=crop&q=80"
 team_members:
   - name: "Placeholder content"
     title: "Placeholder content"

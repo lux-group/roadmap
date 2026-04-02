@@ -7,7 +7,6 @@ content:
     label: CEO Message
     path: src/content/homepage
     filename: ceo
-    extension: json
     type: file
     fields:
       - name: name
@@ -27,7 +26,6 @@ content:
     label: Themes for 2026
     path: src/content/homepage
     filename: themes
-    extension: json
     type: file
     fields:
       - name: themes
@@ -51,7 +49,6 @@ content:
     label: Product Groups
     path: src/content
     filename: product-groups
-    extension: json
     type: file
     fields:
       - name: groups
@@ -87,7 +84,6 @@ content:
   - name: teams
     label: Teams
     path: src/content/teams
-    extension: md
     type: collection
     fields:
       - name: title

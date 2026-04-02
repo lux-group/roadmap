@@ -5,8 +5,7 @@ media:
 content:
   - name: ceo
     label: CEO Message
-    path: src/content/homepage
-    filename: ceo
+    path: src/content/homepage/ceo.json
     type: file
     fields:
       - name: name
@@ -24,8 +23,7 @@ content:
 
   - name: themes
     label: Themes for 2026
-    path: src/content/homepage
-    filename: themes
+    path: src/content/homepage/themes.json 
     type: file
     fields:
       - name: themes
@@ -47,8 +45,7 @@ content:
 
   - name: product-groups
     label: Product Groups
-    path: src/content
-    filename: product-groups
+    path: src/content/product-groups.json
     type: file
     fields:
       - name: groups

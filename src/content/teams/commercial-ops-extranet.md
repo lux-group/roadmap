@@ -6,6 +6,7 @@ hero_image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600
 team_members:
   - name: "Jake Pajer"
     title: "Product Manager"
+    photo: "/roadmap/images/team-members/jake-pajer.jpg"
   - name: "Sean Novis"
     title: "Product Manager"
     photo: "/roadmap/images/team-members/sean-novis.jpg"
@@ -13,12 +14,15 @@ team_members:
     title: "Engineering Manager"
   - name: "Ben Charlton"
     title: "Software Engineer"
+    photo: "/roadmap/images/team-members/ben-charlton.png"
   - name: "Aly Ly"
     title: "Software Engineer"
   - name: "Davi Azevedo"
     title: "Software Engineer"
+    photo: "/roadmap/images/team-members/davi-azevedo.jpg"
   - name: "Renan Ribeiro"
     title: "Software Engineer"
+    photo: "/roadmap/images/team-members/renan-ribeiro.jpg"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Extranet Self-Service Platform"

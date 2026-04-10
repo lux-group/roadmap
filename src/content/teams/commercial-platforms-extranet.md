@@ -19,10 +19,10 @@ team_members:
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Partner Central Platform Rebuild"
-    start_date: "2026-01-01"
+    start_date: "2026-04-01"
     end_date: "2026-07-31"
   - title: "Real-Time Rate Management"
-    start_date: "2026-02-01"
+    start_date: "2026-04-01"
     end_date: "2026-06-30"
   - title: "Partner Reporting Suite"
     start_date: "2026-04-01"

@@ -11,6 +11,7 @@ team_members:
     title: "Engineer Manager"
   - name: "Allanah Nassif"
     title: "Software Engineer"
+    photo: "/roadmap/images/team-members/allanah-nassif.jpg"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Tailor-Made and Private Tour"

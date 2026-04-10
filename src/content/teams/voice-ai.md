@@ -19,10 +19,10 @@ team_members:
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "AI Voice Bot v1 – Inbound Triage"
-    start_date: "2026-01-01"
+    start_date: "2026-04-01"
     end_date: "2026-05-31"
   - title: "Intent Classification Model"
-    start_date: "2026-02-01"
+    start_date: "2026-04-01"
     end_date: "2026-04-30"
   - title: "Voice Bot – Booking Status Queries"
     start_date: "2026-04-01"

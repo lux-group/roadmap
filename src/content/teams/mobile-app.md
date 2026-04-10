@@ -12,6 +12,7 @@ team_members:
     photo: "/roadmap/images/team-members/tyler-yang.png"
   - name: "Harikrishnan Gopalakrishnan"
     title: "QA"
+    photo: "/roadmap/images/team-members/harikrishnan-gopalakrishnan.jpg"
   - name: "Hayden Jamieson"
     title: "Software Engineer"
     photo: "/roadmap/images/team-members/hayden-jamieson.png"

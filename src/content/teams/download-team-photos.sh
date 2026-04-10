@@ -332,38 +332,3 @@ curl -sL -o "$DEST/yogeshwar-girish-chaudhari.jpg" "https://avatars.slack-edge.c
 
 echo ""
 echo "Done! Downloaded 108 photos."
-echo "Downloading Konstantin Bartchenkov..."
-curl -sL -o "$DEST/konstantin-bartchenkov.png" "https://avatars.slack-edge.com/2025-01-06/8273255458944_90ce8d5da8efff6314a1_original.png"
-
-echo "Downloading Daniel Nguyen..."
-curl -sL -o "$DEST/daniel-nguyen.png" "https://avatars.slack-edge.com/2025-03-03/8528959274038_826f22e02995fbacc3f5_original.png"
-
-echo "Downloading Dulaj Pathirana..."
-curl -sL -o "$DEST/dulaj-pathirana.png" "https://avatars.slack-edge.com/2023-04-21/5133686489959_841e1cb5b77cc951d16f_original.png"
-
-echo "Downloading Edward Iskenderian..."
-curl -sL -o "$DEST/edward-iskenderian.jpg" "https://avatars.slack-edge.com/2025-08-28/9419332441365_8760e23487a33194f98f_original.jpg"
-
-echo "Downloading Aleksander Vuksanovic..."
-curl -sL -o "$DEST/aleksander-vuksanovic.jpg" "https://avatars.slack-edge.com/2023-07-18/5596211888946_78e40d0aae5eed6c52b0_original.jpg"
-
-echo "Downloading Aly Ly..."
-curl -sL -o "$DEST/aly-ly.jpg" "https://avatars.slack-edge.com/2026-01-19/10353889912208_c57408247644378e0125_original.jpg"
-
-echo "Downloading Manu J..."
-curl -sL -o "$DEST/manu-j.jpg" "https://avatars.slack-edge.com/2025-05-12/8883321125684_3df199387d37d0db288d_original.jpg"
-
-echo "Downloading Prahar Dosani..."
-curl -sL -o "$DEST/prahar-dosani.png" "https://avatars.slack-edge.com/2026-03-20/10768100792528_5adb0609f6a9ee3dc845_original.png"
-
-echo "Downloading Alexander Sokol..."
-curl -sL -o "$DEST/alexander-sokol.jpg" "https://avatars.slack-edge.com/2019-01-21/528783866773_90350a61e6382fd844df_original.jpg"
-
-echo ""
-echo "Done! Downloaded 9 additional photos."
-
-echo "Downloading Hunter Li..."
-curl -sL -o "$DEST/hunter-li.png" "https://avatars.slack-edge.com/2026-02-21/10539598129335_24819fc770e824fe4db8_original.png"
-
-echo "Downloading Harikrishnan Gopalakrishnan..."
-curl -sL -o "$DEST/harikrishnan-gopalakrishnan.jpg" "https://avatars.slack-edge.com/2022-10-14/4213371653846_caf5da19e032381fce09_original.jpg"

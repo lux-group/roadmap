@@ -32,8 +32,8 @@ team_members:
     title: "Graduate Engineer"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
-  - title: "Ancils (Seats, Meals, Bags) + Self Serve (Date Change, Cancellation)"
-    start_date: "2026-01-01"
+  - title: "Ancils (Seats, Meals, Bags) + Self Serve"
+    start_date: "2026-04-01"
     end_date: "2026-08-31"
   - title: "Date Grid"
     start_date: "2026-03-02"

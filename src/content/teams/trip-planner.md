@@ -9,7 +9,10 @@ team_members:
     photo: "/roadmap/images/team-members/william-ritossa.png"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
-  - title: "Supporting multi"
+  - title: "Placeholder content"
+    start_date: "2026-04-01"
+    end_date: "2026-06-30"
+  - title: "Placeholder content"
     start_date: "2026-04-01"
     end_date: "2026-06-30"
   - title: "Expand regions"

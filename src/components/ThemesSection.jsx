@@ -29,12 +29,6 @@ export default function ThemesSection() {
                 >
                   {theme.title}
                 </p>
-                <p
-                  className="text-dark leading-5"
-                  style={{ fontFamily: 'var(--font-body)', fontSize: '14px' }}
-                >
-                  {theme.description}
-                </p>
               </div>
             </div>
           ))}

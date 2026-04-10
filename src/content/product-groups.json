@@ -4,9 +4,8 @@
       "id": "growth",
       "label": "Growth & Customer Lifecycle",
       "teams": [
-        { "name": "Acquisition & Performance Marketing", "slug": "acquisition-performance-marketing", "icon": "Acquisition & Performance Marketing.png" },
         { "name": "Customer Lifecycle", "slug": "customer-lifecycle", "icon": "Customer Lifecycle.png" },
-        { "name": "Extranet (Partner Central)", "slug": "extranet-partner-central", "icon": "Extranet (Partner Central).png" }
+        { "name": "Growth", "slug": "localisation", "icon": "Localisation.png" }
       ]
     },
     {
@@ -17,7 +16,6 @@
         { "name": "Trip Planner", "slug": "trip-planner", "icon": "Trip Planner.png" },
         { "name": "LERE", "slug": "lere", "icon": "LERE.png" },
         { "name": "Loyalty", "slug": "loyalty", "icon": "Loyalty.png" },
-        { "name": "Localisation", "slug": "localisation", "icon": "Localisation.png" },
         { "name": "Business Traveller", "slug": "business-traveller", "icon": "Business Traveller.png" },
         { "name": "Customer Payments", "slug": "customer-payments", "icon": "Customer Payments.png" },
         { "name": "On-Site Search", "slug": "on-site-search", "icon": "On-Site Search.png" },
@@ -33,25 +31,21 @@
         { "name": "Cruises", "slug": "cruises", "icon": "Cruises.png" },
         { "name": "Flights", "slug": "flights", "icon": "Flights.png" },
         { "name": "Experiences", "slug": "experiences", "icon": "Experiences.png" },
-        { "name": "Ancillaries", "slug": "ancillaries", "icon": "Ancillaries.png" },
-        { "name": "Commercial Ops / Extranet", "slug": "commercial-ops-extranet", "icon": "Extranet.png" },
-        { "name": "Special Projects", "slug": "special-projects", "icon": "Special Projects.png" }
+        { "name": "Commercial Ops / Extranet", "slug": "commercial-ops-extranet", "icon": "Extranet.png" }
       ]
     },
     {
       "id": "distribution",
       "label": "Distribution & Partnerships",
       "teams": [
-        { "name": "Agent Hub", "slug": "agent-hub", "icon": "Agent Hub.png" },
-        { "name": "White Labels", "slug": "white-labels", "icon": "White Labels.png" },
-        { "name": "Distribution APIs", "slug": "distribution-apis", "icon": "Distribution APIs.png" }
+        { "name": "Agent Hub", "slug": "agent-hub", "icon": "Agent Hub.png" }
       ]
     },
     {
       "id": "csx",
       "label": "Customer Service & Sales Experience",
       "teams": [
-        { "name": "Self Service", "slug": "self-service", "icon": "Self Service.png" },
+        { "name": "OperEx", "slug": "self-service", "icon": "Self Service.png" },
         { "name": "Voice AI", "slug": "voice-ai", "icon": "Voice AI.png" },
         { "name": "Agent Experience", "slug": "agent-experience", "icon": "Agent Experience.png" }
       ]

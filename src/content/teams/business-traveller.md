@@ -11,10 +11,13 @@ team_members:
     title: "Engineering Manager"
   - name: "Andrew Johnstone"
     title: "Senior Software Engineer"
+    photo: "/roadmap/images/team-members/andrew-johnstone.jpg"
   - name: "Luke Mao"
     title: "Software Engineer"
+    photo: "/roadmap/images/team-members/luke-mao.jpg"
   - name: "Henry Huang"
     title: "Associate Software Engineer"
+    photo: "/roadmap/images/team-members/henry-huang.jpg"
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Gold Societe status attainable on LEBT"

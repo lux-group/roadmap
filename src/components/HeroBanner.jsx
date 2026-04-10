@@ -2,7 +2,7 @@
 const MALDIVES_URL = 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1600&auto=format&fit=crop&q=80'
 
 const WATCH_URL =
-  'https://teams.microsoft.com/l/meetingrecap?driveId=b%21NHCtb_L8GUyVFTK7RLwbxen5Qbe7qyJMqlTRzn94hJMyd7qowttVS5RADaJo2YDs&driveItemId=01EQM64KBTFTJAZ7D2QFBIP4BJMKNPRVCO&sitePath=https%3A%2F%2Fluxgroupau-my.sharepoint.com%2F%3Av%3A%2Fg%2Fpersonal%2Fshay_hamama_luxuryescapes_com%2FETMs0gz8eoFCh_ApYpr41E4BGphNrKri4VBfzD_-vLRQRA&fileUrl=https%3A%2F%2Fluxgroupau-my.sharepoint.com%2F%3Av%3A%2Fg%2Fpersonal%2Fshay_hamama_luxuryescapes_com%2FETMs0gz8eoFCh_ApYpr41E4BGphNrKri4VBfzD_-vLRQRA&iCalUid=040000008200E00074C5B7101A82E00800000000138099A628E6DB01000000000000000010000000C948F8AABD48D344B97F5ED9AB987454&threadId=19%3Ameeting_M2E5OGU5M2MtNzdkZi00NWQyLTgzNzktMzVlOTc5ODYyOWQ5%40thread.v2&organizerId=7139c6a6-c124-4664-9000-a5b3be0a4bcc&tenantId=af01c23e-549d-4b2e-9ea4-4cf15e7040ca&callId=7b1b2342-37cf-4386-b0f9-d2fd0d19f55d&threadType=Meeting&meetingType=Scheduled&subType=RecapSharingLink_RecapChiclet'
+  'https://luxgroupau-my.sharepoint.com/:v:/r/personal/shay_hamama_luxuryescapes_com/Documents/Recordings/Product%20Roadmap%20Keynote%202026-20260410_150015-Meeting%20Recording.mp4?csf=1&web=1&e=SS6k1V&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D'
 
 function PlayIcon() {
   return (

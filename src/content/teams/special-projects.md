@@ -19,10 +19,10 @@ team_members:
 gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "Placeholder content"
-    start_date: "2026-01-01"
+    start_date: "2026-04-01"
     end_date: "2026-05-31"
   - title: "Placeholder content"
-    start_date: "2026-03-01"
+    start_date: "2026-04-01"
     end_date: "2026-07-31"
   - title: "Placeholder content"
     start_date: "2026-04-01"

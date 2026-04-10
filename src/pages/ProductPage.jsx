@@ -75,7 +75,7 @@ function TeamSection({ members }) {
         Meet the team
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{ gap: '24px' }}>
-        {members.map((member, i) => (
+        {members.filter(member => member.photo).map((member, i) => (
           <div
             key={i}
             className="flex items-center bg-white"

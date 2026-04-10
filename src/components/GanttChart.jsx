@@ -1,23 +1,45 @@
-// Horizontal Gantt chart — 9 month columns (Jan–Sep 2026), initiative bars
-const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep']
-const YEAR = 2026
-const NUM_MONTHS = 9
+// Horizontal Gantt chart — dynamic month range derived from items
+const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
-function monthIndex(dateStr) {
-  const d = new Date(dateStr)
-  const m = d.getFullYear() === YEAR ? d.getMonth() : d.getFullYear() < YEAR ? 0 : NUM_MONTHS - 1
-  return Math.max(0, Math.min(NUM_MONTHS - 1, m))
+function buildMonthRange(items) {
+  let minYear, minMonth, maxYear, maxMonth
+  items.forEach(item => {
+    const s = new Date(item.start_date)
+    const e = new Date(item.end_date)
+    const sy = s.getFullYear(), sm = s.getMonth()
+    const ey = e.getFullYear(), em = e.getMonth()
+    if (minYear === undefined || sy < minYear || (sy === minYear && sm < minMonth)) {
+      minYear = sy; minMonth = sm
+    }
+    if (maxYear === undefined || ey > maxYear || (ey === maxYear && em > maxMonth)) {
+      maxYear = ey; maxMonth = em
+    }
+  })
+  const months = []
+  let y = minYear, m = minMonth
+  while (y < maxYear || (y === maxYear && m <= maxMonth)) {
+    months.push({ label: MONTH_NAMES[m], year: y, month: m })
+    m++
+    if (m === 12) { m = 0; y++ }
+  }
+  return months
 }
 
-function monthFraction(dateStr, isEnd) {
+function getPosition(months, dateStr) {
   const d = new Date(dateStr)
-  if (d.getFullYear() !== YEAR) return isEnd ? 1 : 0
-  const days = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate()
-  return d.getDate() / days
+  const year = d.getFullYear()
+  const month = d.getMonth()
+  const idx = months.findIndex(mo => mo.year === year && mo.month === month)
+  const clampedIdx = idx === -1 ? 0 : idx
+  const daysInMonth = new Date(year, month + 1, 0).getDate()
+  return clampedIdx + d.getDate() / daysInMonth
 }
 
 export default function GanttChart({ title, items }) {
   if (!items || items.length === 0) return null
+
+  const months = buildMonthRange(items)
+  const NUM_MONTHS = months.length
 
   return (
     <section className="px-10" style={{ background: '#fff', paddingTop: '60px', paddingBottom: '60px' }}>
@@ -44,9 +66,9 @@ export default function GanttChart({ title, items }) {
             className="grid"
             style={{ gridTemplateColumns: `repeat(${NUM_MONTHS}, 1fr)` }}
           >
-            {MONTHS.map((month, i) => (
+            {months.map(({ label }, i) => (
               <div
-                key={month}
+                key={i}
                 style={{
                   textAlign: 'center',
                   paddingTop: '24px',
@@ -57,7 +79,7 @@ export default function GanttChart({ title, items }) {
                   borderRight: i < NUM_MONTHS - 1 ? '1px solid #d4d5d8' : 'none',
                 }}
               >
-                {month}
+                {label}
               </div>
             ))}
           </div>
@@ -65,13 +87,11 @@ export default function GanttChart({ title, items }) {
           {/* Initiative rows */}
           <div className="flex flex-col">
             {items.slice(0, 6).map((item, rowIdx) => {
-              const startCol = monthIndex(item.start_date)
-              const endCol = monthIndex(item.end_date)
-              const startFrac = monthFraction(item.start_date, false)
-              const endFrac = monthFraction(item.end_date, true)
+              const startPos = getPosition(months, item.start_date)
+              const endPos = getPosition(months, item.end_date)
 
-              const leftPct = ((startCol + startFrac) / NUM_MONTHS) * 100
-              const rightPct = ((endCol + endFrac) / NUM_MONTHS) * 100
+              const leftPct = (startPos / NUM_MONTHS) * 100
+              const rightPct = (endPos / NUM_MONTHS) * 100
               const widthPct = Math.max(rightPct - leftPct, 100 / NUM_MONTHS)
 
               return (
@@ -85,7 +105,7 @@ export default function GanttChart({ title, items }) {
                     className="absolute inset-0 grid pointer-events-none"
                     style={{ gridTemplateColumns: `repeat(${NUM_MONTHS}, 1fr)` }}
                   >
-                    {MONTHS.map((_, i) => (
+                    {months.map((_, i) => (
                       <div
                         key={i}
                         style={{

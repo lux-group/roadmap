@@ -44,6 +44,12 @@ gantt_items:
   - title: "LP+ Pricing"
     start_date: "2026-04-01"
     end_date: "2026-04-30"
+  - title: "Car hire"
+    start_date: "2026-04-01"
+    end_date: "2026-08-30"
+  - title: "Corporate events"
+    start_date: "2026-04-01"
+    end_date: "2026-05-30"
 goals_section_title: "Goals"
 goals:
   - headline: "Increase GM in Experiences"

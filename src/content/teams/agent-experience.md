@@ -44,7 +44,7 @@ gantt_section_title: "2026 Roadmap"
 gantt_items:
   - title: "EmailAI"
     start_date: "2026-04-10"
-    end_date: "2026-07-17"
+    end_date: "2026-11-17"
   - title: "Synchronisation Of All Contact"
     start_date: "2026-05-08"
     end_date: "2026-08-07"

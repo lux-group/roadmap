@@ -79,94 +79,99 @@ The roadmap ahead is bold. We're scaling smarter, delivering faster, and aiming 
 This is more than a plan. It's the future of travel, redefined. And we're just getting started.`,ceoData={name,job_title,photo,description};function CEOSection(){const{name:e,job_title:o,photo:a,description:s}=ceoData,c=s.split(`
 
 `).filter(Boolean);return jsxRuntimeExports.jsx("section",{className:"flex items-center justify-center py-12 px-6",style:{background:"var(--color-beige)"},children:jsxRuntimeExports.jsxs("div",{className:"flex flex-col md:flex-row gap-10 items-start max-w-[720px] w-full",children:[jsxRuntimeExports.jsxs("div",{className:"flex flex-col items-center gap-8 shrink-0",children:[jsxRuntimeExports.jsx("img",{src:a,alt:e,className:"rounded-full object-cover object-top",style:{width:"183px",height:"183px"}}),jsxRuntimeExports.jsxs("div",{className:"text-center",children:[jsxRuntimeExports.jsx("p",{className:"font-semibold text-dark text-base leading-6",style:{fontFamily:"var(--font-body)"},children:e}),jsxRuntimeExports.jsx("p",{className:"text-sm leading-5 mt-1",style:{fontFamily:"var(--font-body)",color:"rgba(0,0,0,0.55)"},children:o})]})]}),jsxRuntimeExports.jsx("div",{className:"flex flex-col gap-4 flex-1 min-w-0",children:c.map((d,h)=>jsxRuntimeExports.jsx("p",{className:"text-dark leading-5",style:{fontFamily:"var(--font-body)",fontSize:"14px"},children:d},h))})]})})}const themes=[{title:"AI as an Efficiency Driver",description:"Descriptions to be updated by content owners.",image:"/roadmap/images/themes/ai-efficiency-driver.jpg"},{title:"Increase Supply & Improve Margin",description:"Descriptions to be updated by content owners.",image:"/roadmap/images/themes/increase-supply-improve-margin.jpg"},{title:"Loyalty & Continued Engagement",description:"Descriptions to be updated by content owners.",image:"/roadmap/images/themes/loyalty-continued-engagement.jpg"},{title:"Platform, AI Tools & Infrastructure for Scale",description:"Descriptions to be updated by content owners.",image:"/roadmap/images/themes/platform-ai-tools-infrastructure.jpg"},{title:"AI as an International Growth Driver",description:"Descriptions to be updated by content owners.",image:"/roadmap/images/themes/ai-international-growth-driver.jpg"},{title:"AI as a Growth Driver",description:"Descriptions to be updated by content owners.",image:"/roadmap/images/themes/ai-growth-driver.jpg"}],themesData={themes};function ThemesSection(){const{themes:e}=themesData;return jsxRuntimeExports.jsx("section",{className:"flex justify-center py-16 px-6 bg-white",children:jsxRuntimeExports.jsxs("div",{className:"w-full max-w-[1040px] flex flex-col gap-10",children:[jsxRuntimeExports.jsx("h2",{className:"text-section text-dark",style:{fontFamily:"var(--font-heading)"},children:"Themes for 2026"}),jsxRuntimeExports.jsx("div",{className:"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8",children:e.map((o,a)=>jsxRuntimeExports.jsxs("div",{className:"flex flex-col gap-5",children:[jsxRuntimeExports.jsx("img",{src:o.image,alt:o.title,className:"rounded-card shrink-0 w-full object-cover",style:{height:"211px"}}),jsxRuntimeExports.jsx("div",{className:"flex flex-col gap-2",children:jsxRuntimeExports.jsx("p",{className:"text-dark font-medium leading-7",style:{fontFamily:"var(--font-body)",fontSize:"24px"},children:o.title})})]},a))})]})})}function ArrowRightIcon(){return jsxRuntimeExports.jsx("svg",{width:"16",height:"16",viewBox:"0 0 16 16",fill:"none",xmlns:"http://www.w3.org/2000/svg","aria-hidden":"true",children:jsxRuntimeExports.jsx("path",{d:"M3 8h10M9 4l4 4-4 4",stroke:"currentColor",strokeWidth:"1.5",strokeLinecap:"round",strokeLinejoin:"round"})})}function TeamCard({team:e}){return jsxRuntimeExports.jsxs(Link,{to:`/product/${e.slug}`,className:"flex items-center gap-3 bg-white rounded-card px-5 py-3 hover:shadow-md transition-shadow",style:{boxShadow:"var(--shadow-card)"},children:[e.icon?jsxRuntimeExports.jsx("img",{src:`/roadmap/images/product-icon/${e.icon}`,alt:"",className:"rounded-full shrink-0 object-cover",style:{width:"70px",height:"70px"}}):jsxRuntimeExports.jsx("div",{className:"rounded-full shrink-0 bg-[#e7e8ea]",style:{width:"70px",height:"70px"}}),jsxRuntimeExports.jsx("span",{className:"flex-1 min-w-0 font-semibold text-dark text-sm leading-5",style:{fontFamily:"var(--font-body)"},children:e.name}),jsxRuntimeExports.jsx("span",{className:"shrink-0 text-dark opacity-40",children:jsxRuntimeExports.jsx(ArrowRightIcon,{})})]})}function TeamDirectory(){return jsxRuntimeExports.jsx("section",{className:"py-16 px-6",style:{background:"var(--color-beige)"},children:jsxRuntimeExports.jsx("div",{className:"max-w-[1040px] mx-auto flex flex-col gap-16",children:PRODUCT_GROUPS.map(e=>jsxRuntimeExports.jsxs("div",{id:e.id,className:"flex flex-col gap-6",children:[jsxRuntimeExports.jsx("h2",{className:"text-section text-dark",style:{fontFamily:"var(--font-heading)"},children:e.label}),jsxRuntimeExports.jsx("div",{className:"grid grid-cols-1 md:grid-cols-2 gap-3",children:e.teams.map(o=>jsxRuntimeExports.jsx(TeamCard,{team:o},o.slug))})]},e.id))})})}function HomePage(){return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(HeroBanner,{}),jsxRuntimeExports.jsx(CEOSection,{}),jsxRuntimeExports.jsx(ThemesSection,{}),jsxRuntimeExports.jsx(TeamDirectory,{})]})}function DirectoryPage(){return jsxRuntimeExports.jsx("div",{className:"min-h-screen py-16 px-6",style:{background:"var(--color-beige)"},children:jsxRuntimeExports.jsxs("div",{className:"max-w-[800px] mx-auto",children:[jsxRuntimeExports.jsx("h1",{className:"text-section text-dark mb-12",style:{fontFamily:"var(--font-heading)"},children:"Team Directory"}),jsxRuntimeExports.jsx("div",{className:"flex flex-col gap-10",children:PRODUCT_GROUPS.map(e=>jsxRuntimeExports.jsxs("div",{id:e.id,children:[jsxRuntimeExports.jsx("h2",{className:"text-dark font-semibold text-sm mb-3 uppercase tracking-widest opacity-60",style:{fontFamily:"var(--font-body)",letterSpacing:"0.1em"},children:e.label}),jsxRuntimeExports.jsx("div",{className:"bg-white rounded-card overflow-hidden",style:{boxShadow:"var(--shadow-card)"},children:e.teams.map((o,a)=>jsxRuntimeExports.jsxs(Link,{to:`/product/${o.slug}`,className:"flex items-center justify-between px-6 py-4 hover:bg-[#f9f8f5] transition-colors text-dark",style:{borderTop:a>0?"1px solid rgba(0,0,0,0.07)":"none",fontFamily:"var(--font-body)"},children:[jsxRuntimeExports.jsx("span",{className:"text-sm font-medium",children:o.name}),jsxRuntimeExports.jsx("span",{className:"text-dark opacity-40 text-base",children:"→"})]},o.slug))})]},e.id))})]})})}const __vite_glob_0_0=`---
-title: "Accommodation"
-slug: "accommodation"
-product_group: "Supply"
-hero_image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&auto=format&fit=crop&q=80"
+title: Accommodation
+hero_image: https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&auto=format&fit=crop&q=80
 team_members:
-  - name: "Gregory Fine"
-    title: "Group Product Manager"
-    photo: "/roadmap/images/team-members/gregory-fine.png"
-  - name: "Nish Shrestha"
-    title: "Product Manager"
-  - name: "James Ball"
-    title: "Associate Product Manager"
-    photo: "/roadmap/images/team-members/james-ball.jpg"
-  - name: "Matt Swanson"
-    title: "Group Engineering Manager"
-    photo: "/roadmap/images/team-members/matt-swanson.jpg"
-  - name: "Aaron Toomey"
-    title: "Engineering Manager"
-    photo: "/roadmap/images/team-members/aaron-toomey.jpg"
-  - name: "Alexander Sokol"
-    title: "Engineering Manager"
-    photo: "/roadmap/images/team-members/alexander-sokol.jpg"
-  - name: "Harley Paterson"
-    title: "Principal Engineer"
-    photo: "/roadmap/images/team-members/harley-paterson.jpg"
-  - name: "Xiao Di Guan"
-    title: "Senior Engineer"
-    photo: "/roadmap/images/team-members/xiao-di-guan.jpg"
-  - name: "Di Shang"
-    title: "Senior Engineer"
-    photo: "/roadmap/images/team-members/di-shang.jpg"
-  - name: "Venkat Balachandran"
-    title: "Senior Engineer"
-    photo: "/roadmap/images/team-members/venkat-balachandran.jpg"
-  - name: "Chris Nguyen"
-    title: "Senior Engineer"
-    photo: "/roadmap/images/team-members/chris-nguyen.png"
-  - name: "Dan Wani"
-    title: "Senior Engineer"
-    photo: "/roadmap/images/team-members/dan-wani.png"
-  - name: "James Hardy"
-    title: "Senior Engineer"
-    photo: "/roadmap/images/team-members/james-hardy.jpg"
-  - name: "Aleksander Vuksanovic"
-    title: "Engineer"
-    photo: "/roadmap/images/team-members/aleksander-vuksanovic.jpg"
-  - name: "Alexander Burakovskiy"
-    title: "Engineer"
-    photo: "/roadmap/images/team-members/alexander-burakovskiy.png"
-gantt_section_title: "2026 Roadmap"
+  - name: Gregory Fine
+    title: Group Product Manager
+    photo: /roadmap/images/team-members/gregory-fine.png
+  - name: Nish Shrestha
+    title: Product Manager
+  - name: James Ball
+    title: Associate Product Manager
+    photo: /roadmap/images/team-members/james-ball.jpg
+  - name: Matt Swanson
+    title: Group Engineering Manager
+    photo: /roadmap/images/team-members/matt-swanson.jpg
+  - name: Aaron Toomey
+    title: Engineering Manager
+    photo: /roadmap/images/team-members/aaron-toomey.jpg
+  - name: Alexander Sokol
+    title: Engineering Manager
+    photo: /roadmap/images/team-members/alexander-sokol.jpg
+  - name: Harley Paterson
+    title: Principal Engineer
+    photo: /roadmap/images/team-members/harley-paterson.jpg
+  - name: Xiao Di Guan
+    title: Senior Engineer
+    photo: /roadmap/images/team-members/xiao-di-guan.jpg
+  - name: Di Shang
+    title: Senior Engineer
+    photo: /roadmap/images/team-members/di-shang.jpg
+  - name: Venkat Balachandran
+    title: Senior Engineer
+    photo: /roadmap/images/team-members/venkat-balachandran.jpg
+  - name: Chris Nguyen
+    title: Senior Engineer
+    photo: /roadmap/images/team-members/chris-nguyen.png
+  - name: Dan Wani
+    title: Senior Engineer
+    photo: /roadmap/images/team-members/dan-wani.png
+  - name: James Hardy
+    title: Senior Engineer
+    photo: /roadmap/images/team-members/james-hardy.jpg
+  - name: Aleksander Vuksanovic
+    title: Engineer
+    photo: /roadmap/images/team-members/aleksander-vuksanovic.jpg
+  - name: Alexander Burakovskiy
+    title: Engineer
+    photo: /roadmap/images/team-members/alexander-burakovskiy.png
 gantt_items:
-  - title: "Dynamic Bundles and packages"
-    start_date: "2026-04-01"
-    end_date: "2027-06-30"
-  - title: "Fully Developed Vacation Rental Product"
-    start_date: "2026-04-01"
-    end_date: "2026-07-31"
-  - title: "Expand Property Supply in International Markets"
-    start_date: "2026-04-01"
-    end_date: "2026-12-31"
-  - title: "New Order Service Orchestrator"
-    start_date: "2026-04-01"
-    end_date: "2026-09-30"
-  - title: "Smarter Discounts and Margin Management"
-    start_date: "2026-06-01"
-    end_date: "2026-12-31"
-goals_section_title: "Goals"
+  - title: Dynamic Bundles and packages
+    start_date: 2026-04-01
+    end_date: 2027-06-30
+  - title: Fully Developed Vacation Rental Product
+    start_date: 2026-04-02
+    end_date: 2026-07-31
+  - title: Expand Property Supply in International Markets
+    start_date: 2026-04-01
+    end_date: 2026-12-31
+  - title: New Order Service Orchestrator
+    start_date: 2026-04-01
+    end_date: 2026-09-30
+  - title: Smarter Discounts and Margin Management
+    start_date: 2026-06-01
+    end_date: 2026-12-31
 goals:
-  - headline: "Increase Supply in Key International Markets"
-    description: "Current: regional coverage → Target: adequate supply in each key market (Hotels and Vacation Rentals, High and mid range)"
-  - headline: "Bundled Products - Conversion up by 85%"
+  - headline: Increase Supply in Key International Markets
+    description: "Current: regional coverage → Target: adequate supply in each key
+      market (Hotels and Vacation Rentals, High and mid range)"
+  - headline: Bundled Products - Conversion up by 85%
     description: "Current: 0.8% (LPP no Bundles) → Target: 1.5%"
-  - headline: "Bundled Product Views per property >= 600 per month"
-    description: "Current: 400 avg (LPP no Bundles) → Target: 600 views per month per property"
-  - headline: "Vacation Rentals - Conversion by 33%"
+  - headline: Bundled Product Views per property >= 600 per month
+    description: "Current: 400 avg (LPP no Bundles) → Target: 600 views per month
+      per property"
+  - headline: Vacation Rentals - Conversion by 33%
     description: "Current: 0.6% → Target: 0.8% with more than 100 views per month"
-  - headline: "Vacation Rentals - Sales by 50%"
+  - headline: Vacation Rentals - Sales by 50%
     description: "Current: $50k → Target: $100k Monthly Margin"
-initiatives_section_title: "Key Initiatives"
 key_initiatives:
-  - heading: "Scaled Dynamic Product Bundling"
-    description: "Enable dynamic bundling of accommodation with experiences, flights and cruises to create differentiated product packages. This drives higher conversion through compelling value propositions and increases product views per property, delivering meaningful uplift in both customer engagement and margin."
-
-  - heading: "Expanded Supply in Key International Markets"
-    description: "Expand property supply across international markets to ensure adequate coverage in both Hotels and Vacation Rentals at high and mid-range price points. This market expansion supports our growth strategy by ensuring we can serve customers wherever they want to travel."
-
-  - heading: "Fully Developed Vacation Rental Product Offering"
-    description: "Build out a complete Vacation Rental vertical with comprehensive inventory, competitive pricing, and strong merchandising capabilities. This new product line targets significant monthly margin growth by capturing demand in the rapidly growing short-term rental market."
+  - heading: Scaled Dynamic Product Bundling
+    description: Enable dynamic bundling of accommodation with experiences, flights
+      and cruises to create differentiated product packages. This drives higher
+      conversion through compelling value propositions and increases product
+      views per property, delivering meaningful uplift in both customer
+      engagement and margin.
+  - heading: Expanded Supply in Key International Markets
+    description: Expand property supply across international markets to ensure
+      adequate coverage in both Hotels and Vacation Rentals at high and
+      mid-range price points. This market expansion supports our growth strategy
+      by ensuring we can serve customers wherever they want to travel.
+  - heading: Fully Developed Vacation Rental Product Offering
+    description: Build out a complete Vacation Rental vertical with comprehensive
+      inventory, competitive pricing, and strong merchandising capabilities.
+      This new product line targets significant monthly margin growth by
+      capturing demand in the rapidly growing short-term rental market.
 ---
 `,__vite_glob_0_1=`---
 title: "Acquisition & Performance Marketing"

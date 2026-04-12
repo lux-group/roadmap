@@ -52,7 +52,7 @@ gantt_items:
     end_date: 2027-06-30
   - title: Fully Developed Vacation Rental Product
     start_date: 2026-04-02
-    end_date: 2026-07-31
+    end_date: 2026-07-30
   - title: Expand Property Supply in International Markets
     start_date: 2026-04-01
     end_date: 2026-12-31

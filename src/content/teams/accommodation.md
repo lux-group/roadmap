@@ -49,7 +49,7 @@ team_members:
 gantt_items:
   - title: Dynamic Bundles and packages
     start_date: 2026-04-01
-    end_date: 2027-06-30
+    end_date: 2027-06-29
   - title: Fully Developed Vacation Rental Product
     start_date: 2026-04-02
     end_date: 2026-07-30

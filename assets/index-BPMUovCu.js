@@ -1495,8 +1495,11 @@ gantt_items:
     start_date: 2026-04-16
     end_date: 2026-04-30
   - title: Google Ad Budget Optimisation Tools
-    start_date: 2026-05-01
+    start_date: 2026-06-01
     end_date: 2026-08-31
+  - title: Activate 'Google Things To Do'
+    start_date: 2026-08-01
+    end_date: 2026-09-30
 goals:
   - headline: Increase GHA Conversion Rate
     description: "Current: 0.70% → Target: 0.80% (15% increase)"
@@ -1529,6 +1532,29 @@ key_initiatives:
       engagement. By strengthening how we deploy and manage incentives, we can
       increase conversion rates while maintaining greater control over margin
       and promotional strategy.
+  - heading: Multi-Language Support
+    description: Enable additional language support across marketing systems,
+      including ad feeds, Contentful pages and SEO content, to support expansion
+      in non-English markets. This will allow us to more effectively acquire and
+      convert customers in international regions by delivering content and
+      offers in their local language. Over time, this capability will form a key
+      foundation for scaling our presence globally and improving performance
+      across new markets.
+  - heading: Google Ad Budget Optimisation Tools
+    description: Build internal tools to automate and centralise budget optimisation
+      across advertising platforms, enabling faster and more data-driven
+      allocation of marketing spend. By reducing manual intervention and
+      improving visibility across campaigns, we can respond more quickly to
+      performance changes and scale investment more efficiently across markets.
+      This will support more consistent decision-making and unlock greater
+      efficiency in how we deploy marketing budgets
+  - heading: Activate 'Google Things To Do'
+    description: Enable Google Things To Do as a new acquisition channel to increase
+      visibility and drive growth in our experiences offering. By integrating
+      our inventory into this high-intent platform, we can capture users
+      actively searching for activities and experiences at the point of
+      planning. This will help us expand reach, drive incremental traffic, and
+      improve conversion across our experiences category.
 ---
 `,__vite_glob_0_21=`---
 title: "Loyalty"

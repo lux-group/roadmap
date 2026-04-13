@@ -784,7 +784,7 @@ team_members:
 gantt_items:
   - title: Payment Schedule optimisation
     start_date: 2026-04-01
-    end_date: 2027-06-30
+    end_date: 2026-06-30
   - title: Purchase Credit
     start_date: 2026-04-07
     end_date: 2026-04-21

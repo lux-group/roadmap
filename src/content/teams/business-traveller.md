@@ -35,7 +35,8 @@ gantt_items:
     end_date: 2026-12-31
 goals:
   - headline: Increase the number of active business customers by ~300%
-    description: "Current: 15 business customers in Apr-2026 → Target: 60 in Dec-2026"
+    description: "Current: 15 active business customers in Apr-2026 → Target: 60 in
+      Dec-2026"
   - headline: Increase TTV booked by non LE staff customers by 200%
     description: "Current: ~$480k in CY2025 → Target: $1.5m in CY2026"
 key_initiatives:

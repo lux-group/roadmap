@@ -1500,6 +1500,9 @@ gantt_items:
   - title: Activate 'Google Things To Do'
     start_date: 2026-08-01
     end_date: 2026-09-30
+  - title: Optimise Geographic SEO Structure
+    start_date: 2026-09-01
+    end_date: 2026-11-30
 goals:
   - headline: Increase GHA Conversion Rate
     description: "Current: 0.70% → Target: 0.80% (15% increase)"

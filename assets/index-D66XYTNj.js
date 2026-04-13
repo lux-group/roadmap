@@ -1491,9 +1491,9 @@ gantt_items:
   - title: Multi-Language Support
     start_date: 2026-04-16
     end_date: 2026-06-30
-  - title: Automate Meta Campaigns
+  - title: Automate Meta Creative and Campaigns
     start_date: 2026-04-16
-    end_date: 2026-04-30
+    end_date: 2026-05-31
   - title: Google Ad Budget Optimisation Tools
     start_date: 2026-06-01
     end_date: 2026-08-31
@@ -1540,6 +1540,13 @@ key_initiatives:
       offers in their local language. Over time, this capability will form a key
       foundation for scaling our presence globally and improving performance
       across new markets.
+  - heading: Automate Meta Creative and Campaigns
+    description: Automate Meta creative and campaign launch to reduce manual effort
+      and enable faster scaling of paid social activity. By building tools to
+      generate creative assets, create campaigns and manage scheduling through
+      internal systems, we can increase launch speed and support more frequent
+      testing. Over time, this will improve efficiency, expand creative output,
+      and strengthen our ability to optimise performance on Meta.
   - heading: Google Ad Budget Optimisation Tools
     description: Build internal tools to automate and centralise budget optimisation
       across advertising platforms, enabling faster and more data-driven
@@ -1555,6 +1562,13 @@ key_initiatives:
       actively searching for activities and experiences at the point of
       planning. This will help us expand reach, drive incremental traffic, and
       improve conversion across our experiences category.
+  - heading: Optimise Geographic SEO Structure
+    description: Optimise our geographic SEO structure to improve search visibility
+      and better capture location-based travel demand. By refining how
+      destination, regional and location pages are structured and surfaced, we
+      can increase relevance for user searches and drive more qualified traffic.
+      This will support higher conversion rates and more efficient acquisition
+      through organic channels.
 ---
 `,__vite_glob_0_21=`---
 title: "Loyalty"

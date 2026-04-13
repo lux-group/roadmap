@@ -31,24 +31,63 @@ team_members:
     title: Software Engineer
     photo: /roadmap/images/team-members/denis-babak.jpg
 gantt_items:
-  - title: Localisation
-    start_date: 2026-04-01
-    end_date: 2026-05-31
-  - title: Streamlined booking flow
-    start_date: 2026-04-01
-    end_date: 2026-07-31
-  - title: Refreshed search experience
-    start_date: 2026-04-01
+  - title: Personalised Explore Page
+    start_date: 2026-07-13
+    end_date: 2026-08-28
+  - title: Editorial Content
+    start_date: 2026-05-04
+    end_date: 2026-06-26
+  - title: Native Tours & Experiences Search
+    start_date: 2026-05-11
     end_date: 2026-06-30
-  - title: Personalised articles and content
-    start_date: 2026-06-01
+  - title: Search Experience Refresh
+    start_date: 2026-04-14
+    end_date: 2026-05-29
+  - title: Website Abandoned Cart Live Activities
+    start_date: 2026-07-20
+    end_date: 2026-08-28
+  - title: Deeper Loyalty Integration
+    start_date: 2026-08-17
+    end_date: 2026-10-09
+  - title: Native-Looking Webviews
+    start_date: 2026-05-18
+    end_date: 2026-06-30
+  - title: LuxPlus+ Onboarding Optimisation
+    start_date: 2026-06-15
+    end_date: 2026-07-24
+  - title: Localisation
+    start_date: 2026-04-14
+    end_date: 2026-05-10
+  - title: Seamless Website Handover
+    start_date: 2026-10-12
+    end_date: 2026-11-20
+  - title: Saved Vouchers
+    start_date: 2026-04-20
+    end_date: 2026-05-29
+  - title: Experiences Upsell in Booking Flow
+    start_date: 2026-11-09
+    end_date: 2026-12-11
+  - title: Abandoned Cart Optimisation
+    start_date: 2026-09-14
+    end_date: 2026-10-23
+  - title: Upcoming Stay Improvements
+    start_date: 2026-09-21
+    end_date: 2026-10-30
+  - title: Booking Flow Conversion Optimisation
+    start_date: 2026-04-14
+    end_date: 2026-08-31
+  - title: Persistent Customer Support Chat
+    start_date: 2026-10-26
+    end_date: 2026-11-27
+  - title: Flight Status Alerts
+    start_date: 2026-04-21
+    end_date: 2026-05-15
+  - title: LE Labs Campaign Management
+    start_date: 2026-06-08
     end_date: 2026-07-31
-  - title: Flight status alerts
-    start_date: 2026-04-01
-    end_date: 2026-05-31
-  - title: Native looking webviews
-    start_date: 2026-09-01
-    end_date: 2026-11-30
+  - title: Daily Travel Game
+    start_date: 2026-11-16
+    end_date: 2026-12-11
 goals:
   - headline: Increase 28-day retention
     description: "Current: 5.25% → Target: 6%"

@@ -38,7 +38,7 @@ gantt_items:
     end_date: 2026-07-31
   - title: Multi-Language Support
     start_date: 2026-04-16
-    end_date: 2026-05-21
+    end_date: 2026-06-30
   - title: Automate Meta Campaigns
     start_date: 2026-04-16
     end_date: 2026-04-30

@@ -99,6 +99,20 @@ key_initiatives:
       2) Developing optimisation tools for identifying high priority
       opportunities;
 
-      3) Streamlining communications with Hotel partners that are out of
-      parity.
+      3) Streamlining communications with Hotel partners that are out of parity.
+  - heading: Next Best 10 actions
+    description: >-
+      We want to create a system to support PCMs and Market Managers on the next
+      10 best actions. We will generate a formula of the core tasks required,
+      ordered to generate the best revenue. This includes:
+
+      - Detection of new flash opportunities,
+
+      - Stale account re-activiation,
+
+      - Price Parity opportunities 
+
+      - LPC to Flash conversion
+
+      - Analysing opportunity pipeline strength
 ---

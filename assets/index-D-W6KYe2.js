@@ -676,7 +676,7 @@ team_members:
 gantt_items:
   - title: AI-Powered Localised Seasonal Campaigns
     start_date: 2026-04-01
-    end_date: 2027-05-14
+    end_date: 2026-11-12
   - title: Multi-Language Integration
     start_date: 2026-04-07
     end_date: 2026-06-05
@@ -692,6 +692,9 @@ gantt_items:
   - title: AgentHub - Re-Engagement and Welcome Journeys
     start_date: 2026-07-06
     end_date: 2026-09-11
+  - title: Rich Communication Services
+    start_date: 2026-06-13
+    end_date: 2026-10-13
 goals:
   - headline: Increase average monthly margin attributed to comms channels by 20%
     description: "Current: $6.7m → Target: $8.0m"

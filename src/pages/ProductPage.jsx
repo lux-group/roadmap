@@ -171,9 +171,9 @@ function InitiativesSection({ initiatives }) {
             borderTop: '1px solid rgba(0,0,0,0.07)',
           }}
         >
-          <div className="flex items-start" style={{ gap: '32px' }}>
+          <div className="flex flex-col md:flex-row items-start" style={{ gap: '32px' }}>
             {/* Left: label + heading */}
-            <div className="flex-1" style={{ maxWidth: '50%' }}>
+            <div className="flex-1 md:max-w-[50%]">
               <p
                 style={{
                   fontFamily: 'var(--font-body)',

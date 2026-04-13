@@ -44,6 +44,7 @@ function NavContent({ onClose, hideLogo = false }) {
   const [expanded, setExpanded] = useState(() =>
     Object.fromEntries(PRODUCT_GROUPS.map(g => [g.id, false]))
   )
+  const [archiveExpanded, setArchiveExpanded] = useState(false)
 
   function toggleSection(id) {
     setExpanded(prev => ({ ...prev, [id]: !prev[id] }))
@@ -130,6 +131,54 @@ function NavContent({ onClose, hideLogo = false }) {
             </div>
           )
         })}
+
+      </div>
+
+      {/* Archive section — anchored to bottom */}
+      <div style={{ borderTop: '0.5px solid #d4d5d8' }}>
+        <button
+          onClick={() => setArchiveExpanded(v => !v)}
+          className="flex items-center gap-2 w-full px-3 rounded-lg"
+          style={{ height: '44px', paddingTop: 0, paddingBottom: 0 }}
+        >
+          <span
+            className="flex-1 text-left uppercase tracking-[0.7px]"
+            style={{
+              fontFamily: 'var(--font-body)',
+              fontSize: '11px',
+              fontWeight: 500,
+              color: '#868993',
+              lineHeight: '14px',
+            }}
+          >
+            Archive
+          </span>
+          {archiveExpanded ? <ChevronUp /> : <ChevronDown />}
+        </button>
+
+        {archiveExpanded && (
+          <div className="pb-2">
+            <a
+              href="https://pic-visa-53969332.figma.site/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 w-full px-3 rounded-lg transition-colors"
+              style={{
+                height: '40px',
+                fontFamily: 'var(--font-body)',
+                fontSize: '12px',
+                fontWeight: 400,
+                color: '#363a45',
+                lineHeight: '16px',
+                textDecoration: 'none',
+              }}
+              onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#f3f3f4' }}
+              onMouseLeave={e => { e.currentTarget.style.backgroundColor = '' }}
+            >
+              2025
+            </a>
+          </div>
+        )}
       </div>
 
     </nav>

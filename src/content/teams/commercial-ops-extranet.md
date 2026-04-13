@@ -1,69 +1,104 @@
 ---
-title: "Commercial Ops / Extranet"
-slug: "commercial-ops-extranet"
-product_group: "Supply"
-hero_image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&auto=format&fit=crop&q=80"
+title: Commercial Ops / Extranet
+hero_image: https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&auto=format&fit=crop&q=80
 team_members:
-  - name: "Jake Pajer"
-    title: "Product Manager"
-    photo: "/roadmap/images/team-members/jake-pajer.jpg"
-  - name: "Sean Novis"
-    title: "Product Manager"
-    photo: "/roadmap/images/team-members/sean-novis.jpg"
-  - name: "Josh Cullen"
-    title: "Engineering Manager"
-    photo: "/roadmap/images/team-members/joshua-cullen.jpg"
-  - name: "Ben Charlton"
-    title: "Software Engineer"
-    photo: "/roadmap/images/team-members/ben-charlton.png"
-  - name: "Aly Ly"
-    title: "Software Engineer"
-    photo: "/roadmap/images/team-members/aly-ly.jpg"
-  - name: "Davi Azevedo"
-    title: "Software Engineer"
-    photo: "/roadmap/images/team-members/davi-azevedo.jpg"
-  - name: "Renan Ribeiro"
-    title: "Software Engineer"
-    photo: "/roadmap/images/team-members/renan-ribeiro.jpg"
-gantt_section_title: "2026 Roadmap"
+  - name: Jake Pajer
+    title: Product Manager
+    photo: /roadmap/images/team-members/jake-pajer.jpg
+  - name: Sean Novis
+    title: Product Manager
+    photo: /roadmap/images/team-members/sean-novis.jpg
+  - name: Josh Cullen
+    title: Engineering Manager
+    photo: /roadmap/images/team-members/joshua-cullen.jpg
+  - name: Ben Charlton
+    title: Software Engineer
+    photo: /roadmap/images/team-members/ben-charlton.png
+  - name: Aly Ly
+    title: Software Engineer
+    photo: /roadmap/images/team-members/aly-ly.jpg
+  - name: Davi Azevedo
+    title: Software Engineer
+    photo: /roadmap/images/team-members/davi-azevedo.jpg
+  - name: Renan Ribeiro
+    title: Software Engineer
+    photo: /roadmap/images/team-members/renan-ribeiro.jpg
 gantt_items:
-  - title: "Extranet Self-Service Platform"
-    start_date: "2026-04-01"
-    end_date: "2026-05-30"
-  - title: "LPC Hotel Maintenance Automation"
-    start_date: "2026-04-01"
-    end_date: "2026-06-15"
-  - title: "Rate Parity Automation"
-    start_date: "2026-05-15"
-    end_date: "2026-06-31"
-  - title: "Flash Go Live Automation"
-    start_date: "2026-06-01"
-    end_date: "2026-12-15"
-  - title: "LPC Go Live Automation"
-    start_date: "2026-09-15"
-    end_date: "2026-11-15"
-goals_section_title: "Goals"
+  - title: Extranet Self-Service Platform
+    start_date: 2026-04-01
+    end_date: 2026-05-30
+  - title: LPC Hotel Maintenance Automation
+    start_date: 2026-04-01
+    end_date: 2026-06-15
+  - title: Rate Parity Automation
+    start_date: 2026-05-15
+    end_date: 2026-05-31
+  - title: Flash Go Live Automation
+    start_date: 2026-06-01
+    end_date: 2026-09-15
+  - title: LPC Go Live Automation
+    start_date: 2026-09-15
+    end_date: 2026-10-15
+  - title: Next Best 10 actions
+    start_date: 2026-10-15
+    end_date: 2026-10-31
 goals:
-  - headline: "Reduce Flash go live time by 50%"
+  - headline: Reduce Flash go live time by 50%
     description: "Current: baseline → Target: 50% reduction"
-  - headline: "Increase number of Flash deals on site by 50%"
+  - headline: Increase number of Flash deals on site by 50%
     description: "Current: baseline → Target: 50% increase"
-  - headline: "Reduce time to process LPC room, rate and property changes by 90%"
+  - headline: Reduce time to process LPC room, rate and property changes by 90%
     description: "Current: baseline → Target: 90% reduction"
-  - headline: "Increase number of LPC rooms on site by 20%"
+  - headline: Increase number of LPC rooms on site by 20%
     description: "Current: baseline → Target: 20% increase"
-  - headline: "Reduce time to process partner requests by 30%"
+  - headline: Reduce time to process partner requests by 30%
     description: "Current: baseline → Target: 30% reduction"
-  - headline: "Reduce parity case resolution time by 50%"
+  - headline: Reduce parity case resolution time by 50%
     description: "Current: baseline → Target: 50% reduction"
-  - headline: "Increase number of won parity cases by 50%"
+  - headline: Increase number of won parity cases by 50%
     description: "Current: baseline → Target: 50% increase"
-initiatives_section_title: "Key Initiatives"
 key_initiatives:
-  - heading: "Reduce the Time to Get Flash Deals Online"
-    description: "Transition the entire Flash deal loading process from Salesforce into Admin Portal to establish a single, end-to-end deal management pipeline. Today, deal data is manually entered in Salesforce and then duplicated in Admin Portal, creating double-handling, increased risk of errors, and operational delays. The future state consolidates all deal creation and management directly within Admin Portal, enabling automated loading of pricing, hotel proposals, partner information, campaign schedules, inclusions, surcharges, and related deal components. This will eliminate any Salesforce dependency for deal loading, improving speed, accuracy, and scalability."
-  - heading: "Automated Feed for New LPC Rooms and Rates"
-    description: "When our system detects a new room or rate plan, we want to automatically load that into Admin Portal. This includes room types, rate plans, room rates, and packages. Using LLMs to read the names that come through from suppliers, all content is automatically created and set to content approved. We can then map these rooms and rate plans directly to the corresponding Bedbank listing, allowing us to automatically display new inventory on our site with no manual intervention required."
-  - heading: "Extranet Self-Service Platform"
-    description: "Transform Extranet into the primary self-service platform for hotel partners. Any action that can currently be performed in Admin portal for hotel maintenance must be available to the hotel partner directly through Extranet. We want partners to self-service room names, descriptions, policies, images, taxes and fees, and amenities."
+  - heading: Reduce the Time to Get Flash Deals Online
+    description: Transition the entire Flash deal loading process from Salesforce
+      into Admin Portal to establish a single, end-to-end deal management
+      pipeline. Today, deal data is manually entered in Salesforce and then
+      duplicated in Admin Portal, creating double-handling, increased risk of
+      errors, and operational delays. The future state consolidates all deal
+      creation and management directly within Admin Portal, enabling automated
+      loading of pricing, hotel proposals, partner information, campaign
+      schedules, inclusions, surcharges, and related deal components. This will
+      eliminate any Salesforce dependency for deal loading, improving speed,
+      accuracy, and scalability.
+  - heading: Automated Feed for New LPC Rooms and Rates
+    description: When our system detects a new room or rate plan, we want to
+      automatically load that into Admin Portal. This includes room types, rate
+      plans, room rates, and packages. Using LLMs to read the names that come
+      through from suppliers, all content is automatically created and set to
+      content approved. We can then map these rooms and rate plans directly to
+      the corresponding Bedbank listing, allowing us to automatically display
+      new inventory on our site with no manual intervention required.
+  - heading: Extranet Self-Service Platform
+    description: Transform Extranet into the primary self-service platform for hotel
+      partners. Any action that can currently be performed in Admin portal for
+      hotel maintenance must be available to the hotel partner directly through
+      Extranet. We want partners to self-service room names, descriptions,
+      policies, images, taxes and fees, and amenities.
+  - heading: Rate Parity Automation
+    description: >-
+      Streamline the entire rate parity lifecycle - detection, categorisation,
+      partner follow-up, and resolution - using AI-powered tooling and
+      Extranet. 
+
+
+      We want to eliminate manual handoffs, intelligently prioritise cases by
+      commercial impact, and empower partners to resolve parity issues directly.
+      We will achieve this by:
+
+      1) Building a Price Parity control centre to easily create opportunities;
+
+      2) Developing optimisation tools for identifying high priority
+      opportunities;
+
+      3) Streamlining communications with Hotel partners that are out of
+      parity.
 ---

@@ -45,6 +45,12 @@ gantt_items:
   - title: Rich Communication Services
     start_date: 2026-06-13
     end_date: 2026-10-13
+  - title: Customisable Post-Purchase Journey
+    start_date: 2026-07-01
+    end_date: 2026-09-01
+  - title: Adaptive Offer Tile
+    start_date: 2026-08-01
+    end_date: 2026-11-01
 goals:
   - headline: Increase average monthly margin attributed to comms channels by 20%
     description: "Current: $6.7m → Target: $8.0m"

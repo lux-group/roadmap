@@ -86,13 +86,13 @@ export default function GanttChart({ title, items }) {
 
           {/* Initiative rows */}
           <div className="flex flex-col">
-            {items.slice(0, 6).map((item, rowIdx) => {
+            {items.map((item, rowIdx) => {
               const startPos = getPosition(months, item.start_date)
               const endPos = getPosition(months, item.end_date)
 
               const leftPct = (startPos / NUM_MONTHS) * 100
               const rightPct = (endPos / NUM_MONTHS) * 100
-              const widthPct = Math.max(rightPct - leftPct, 100 / NUM_MONTHS)
+              const widthPct = Math.min(Math.max(rightPct - leftPct, 100 / NUM_MONTHS), 100 - leftPct)
 
               return (
                 <div
@@ -126,7 +126,6 @@ export default function GanttChart({ title, items }) {
                       borderRadius: '1000px',
                       paddingLeft: '14px',
                       paddingRight: '14px',
-                      minWidth: '80px',
                     }}
                   >
                     <span

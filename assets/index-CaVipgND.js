@@ -788,7 +788,7 @@ gantt_items:
   - title: Purchase Credit
     start_date: 2026-04-07
     end_date: 2026-04-21
-  - title: Split payments
+  - title: Split and Group payments
     start_date: 2026-05-15
     end_date: 2026-05-31
   - title: "Wex VCCs: Cruise + Commercial"

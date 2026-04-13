@@ -820,81 +820,95 @@ key_initiatives:
     description: "We want to enable our customers to purchase credit, which will solve issues where CS need to raise Stripe invoices. Some examples are Custom Offers, paying for a high value order with multiple cards, and tech issues when paying balance. These issues make up the majority of the ~$20m in Stripe invoices we raise each year, which costs $80k."
 ---
 `,__vite_glob_0_11=`---
-title: "Data & Finance"
-slug: "data-finance"
-product_group: "Data & Analytics"
-hero_image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&auto=format&fit=crop&q=80"
+title: Analytics, Data & Finance
+hero_image: https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&auto=format&fit=crop&q=80
 team_members:
-  - name: "Jake Pajer"
-    title: "Group Product Manager"
-    photo: "/roadmap/images/team-members/jake-pajer.jpg"
-  - name: "Oliver Banks"
-    title: "Senior Product Manager"
-    photo: "/roadmap/images/team-members/oliver-banks.jpg"
-  - name: "Richard Biddle"
-    title: "Engineering Manager"
-    photo: "/roadmap/images/team-members/richard-biddle.jpg"
-  - name: "Luke Judd"
-    title: "Senior Data Engineer"
-    photo: "/roadmap/images/team-members/luke-judd.jpg"
-  - name: "Mark Ma"
-    title: "Data Engineer"
-    photo: "/roadmap/images/team-members/mark-ma.png"
-  - name: "Prahar Dosani"
-    title: "Data Engineer"
-    photo: "/roadmap/images/team-members/prahar-dosani.png"
-  - name: "Leo Giovanetti"
-    title: "Lead Data Analyst"
-    photo: "/roadmap/images/team-members/leo-giovanetti.png"
-  - name: "Ming Chong"
-    title: "Principal Data Analyst"
-    photo: "/roadmap/images/team-members/ming-chong.jpg"
-  - name: "Declan McGann"
-    title: "Senior Data Analyst"
-    photo: "/roadmap/images/team-members/declan-mcgann.png"
-  - name: "Oliver Aspinall"
-    title: "Senior Data Analyst"
-    photo: "/roadmap/images/team-members/oliver-aspinall.png"
-gantt_section_title: "2026 Roadmap"
+  - name: Jake Pajer
+    title: Group Product Manager
+    photo: /roadmap/images/team-members/jake-pajer.jpg
+  - name: Oliver Banks
+    title: Senior Product Manager
+    photo: /roadmap/images/team-members/oliver-banks.jpg
+  - name: Richard Biddle
+    title: Engineering Manager
+    photo: /roadmap/images/team-members/richard-biddle.jpg
+  - name: Luke Judd
+    title: Senior Data Engineer
+    photo: /roadmap/images/team-members/luke-judd.jpg
+  - name: Mark Ma
+    title: Data Engineer
+    photo: /roadmap/images/team-members/mark-ma.png
+  - name: Prahar Dosani
+    title: Data Engineer
+    photo: /roadmap/images/team-members/prahar-dosani.png
+  - name: Leo Giovanetti
+    title: Lead Data Analyst
+    photo: /roadmap/images/team-members/leo-giovanetti.png
+  - name: Ming Chong
+    title: Principal Data Analyst
+    photo: /roadmap/images/team-members/ming-chong.jpg
+  - name: Declan McGann
+    title: Senior Data Analyst
+    photo: /roadmap/images/team-members/declan-mcgann.png
+  - name: Oliver Aspinall
+    title: Senior Data Analyst
+    photo: /roadmap/images/team-members/oliver-aspinall.png
 gantt_items:
-  - title: "Self-Service Analytics Workspace and Data Catalogue"
-    start_date: "2026-04-01"
-    end_date: "2026-12-31"
-  - title: "Room Mapping Error Detection"
-    start_date: "2026-04-01"
-    end_date: "2026-05-30"
-  - title: "Price Parrot Extension - Villas and LPP"
-    start_date: "2026-05-01"
-    end_date: "2026-06-31"
-  - title: "Financial Tracking ID"
-    start_date: "2026-04-01"
-    end_date: "2026-05-31"
-  - title: "NetSuite API Integrations"
-    start_date: "2026-06-01"
-    end_date: "2026-07-31"
-  - title: "LuxPlus+ Retention Intelligence"
-    start_date: "2026-04-01"
-    end_date: "2026-05-30"
-goals_section_title: "Goals"
+  - title: Self-Service Analytics Workspace and Data Catalogue
+    start_date: 2026-04-01
+    end_date: 2026-12-31
+  - title: Room Mapping Error Detection
+    start_date: 2026-04-01
+    end_date: 2026-05-30
+  - title: Price Parrot Extension - Villas and LPP
+    start_date: 2026-05-01
+    end_date: 2026-04-13
+  - title: Financial Tracking ID
+    start_date: 2026-04-01
+    end_date: 2026-05-31
+  - title: NetSuite API Integrations
+    start_date: 2026-06-01
+    end_date: 2026-07-31
+  - title: LuxPlus+ Retention Intelligence
+    start_date: 2026-04-01
+    end_date: 2026-05-30
 goals:
-  - headline: "Reduce ad-hoc analyst data request volume by 70%"
+  - headline: Reduce ad-hoc analyst data request volume by 70%
     description: "Current: 10 requests per day → Target: 3 per day"
-  - headline: "Cut time-to-insight for common business questions by 50%"
+  - headline: Cut time-to-insight for common business questions by 50%
     description: "Current: Analysis conducted within 24 hours → Target: < 1 hour"
-  - headline: "Reduce room mapping financial losses by 50%"
+  - headline: Reduce room mapping financial losses by 50%
     description: "Current: $Hundreds of Thousands → Target: < $100,000"
-  - headline: "Increase CS conversion rate by 3%"
+  - headline: Increase CS conversion rate by 3%
     description: "Current: 0.62% → Target: 0.64%"
-  - headline: "Complete Financial Tracking and NetSuite API integration by August 2026"
-  - headline: "Achieve full audit trail on financial transactions and order changes"
-initiatives_section_title: "Key Initiatives"
+  - headline: Complete Financial Tracking and NetSuite API integration by August 2026
+  - headline: Achieve full audit trail on financial transactions and order changes
 key_initiatives:
-  - heading: "Self-Service Analytics Workspace and Data Catalogue"
-    description: "A curated, well-documented data catalogue with pre-built datasets, column definitions, grain, refresh cadences, and ownership will enable any LE employee to find the data they need and build their own dashboards. A natural-language query bot is a secondary feature; the catalogue and governance are the foundation. This reduces analyst time on ad-hoc requests by 10-20% and cuts time-to-insight for common questions by 50%. Creating a data catalogue will enable users of data at LE one central location that provides descriptions of columns for all the tables, core concepts, definitions and business logic, and where different data areas can be obtained."
-  - heading: "LuxPlus+ Retention Intelligence"
-    description: "LE does not know why, or which benefit would retain LP+ members. A model will identify at-risk LP+ members 60/30/14 days before renewal, providing reason codes ('hasn't booked in 6 months,' 'only used 1 of 5 benefits,' 'price sensitivity increased') and the specific benefit or offer most likely to retain them ('highlight unused $200 hotel credit,' 'show upcoming deals in preferred destination')."
-  - heading: "Financial Tracking ID"
-    description: "We're implementing a unique document ID for every financial transaction, including bookings, refunds, surcharges, credits, and vendor payments. Each transaction will carry a traceable identifier from creation through to the ERP. This enables accurate reconciliation in NetSuite, a single source of truth for matching payments to invoices, proper COGS tracking, and a complete audit trail across the platform."
+  - heading: Self-Service Analytics Workspace and Data Catalogue
+    description: A curated, well-documented data catalogue with pre-built datasets,
+      column definitions, grain, refresh cadences, and ownership will enable any
+      LE employee to find the data they need and build their own dashboards. A
+      natural-language query bot is a secondary feature; the catalogue and
+      governance are the foundation. This reduces analyst time on ad-hoc
+      requests by 10-20% and cuts time-to-insight for common questions by 50%.
+      Creating a data catalogue will enable users of data at LE one central
+      location that provides descriptions of columns for all the tables, core
+      concepts, definitions and business logic, and where different data areas
+      can be obtained.
+  - heading: LuxPlus+ Retention Intelligence
+    description: LE does not know why, or which benefit would retain LP+ members. A
+      model will identify at-risk LP+ members 60/30/14 days before renewal,
+      providing reason codes ('hasn't booked in 6 months,' 'only used 1 of 5
+      benefits,' 'price sensitivity increased') and the specific benefit or
+      offer most likely to retain them ('highlight unused $200 hotel credit,'
+      'show upcoming deals in preferred destination').
+  - heading: Financial Tracking ID
+    description: We're implementing a unique document ID for every financial
+      transaction, including bookings, refunds, surcharges, credits, and vendor
+      payments. Each transaction will carry a traceable identifier from creation
+      through to the ERP. This enables accurate reconciliation in NetSuite, a
+      single source of truth for matching payments to invoices, proper COGS
+      tracking, and a complete audit trail across the platform.
 ---
 `,__vite_glob_0_12=`---
 title: "Distribution APIs"

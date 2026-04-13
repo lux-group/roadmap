@@ -36,12 +36,12 @@ gantt_items:
   - title: Build and Scale Voucher System
     start_date: 2026-04-01
     end_date: 2026-07-31
-  - title: Automate Meta Campaigns
-    start_date: 2026-04-16
-    end_date: 2026-04-30
   - title: Multi-Language Support
     start_date: 2026-04-16
     end_date: 2026-05-21
+  - title: Automate Meta Campaigns
+    start_date: 2026-04-16
+    end_date: 2026-04-30
   - title: Google Ad Budget Optimisation Tools
     start_date: 2026-05-01
     end_date: 2026-08-31

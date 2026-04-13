@@ -55,7 +55,7 @@ function NavContent({ onClose, hideLogo = false }) {
       {/* Logo — hidden in mobile drawer since the top bar already shows it */}
       {!hideLogo && (
         <Link
-          to="/"
+          to=""
           className="flex items-center px-8 py-7 shrink-0"
           style={{ borderBottom: '0.5px solid rgba(0,0,0,0.1)' }}
           onClick={onClose}
@@ -206,7 +206,7 @@ export default function Sidebar() {
         className="lg:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white"
         style={{ borderBottom: '1px solid rgba(0,0,0,0.1)' }}
       >
-        <Link to="/">
+        <Link to="">
           <img
             src="/roadmap/images/logos/Logo_Roadmap2026.png"
             alt="2026 Roadmap"

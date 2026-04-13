@@ -149,7 +149,7 @@ function GoalsSection({ sectionTitle, goals }) {
         className="grid grid-cols-1 md:grid-cols-2"
         style={{ columnGap: '32px', rowGap: '32px' }}
       >
-        {goals.slice(0, 8).map((goal, i) => (
+        {goals.map((goal, i) => (
           <GoalCard key={i} goal={goal} />
         ))}
       </div>
@@ -161,7 +161,7 @@ function InitiativesSection({ initiatives }) {
   if (!initiatives || initiatives.length === 0) return null
   return (
     <section style={{ background: '#fff' }}>
-      {initiatives.slice(0, 3).map((initiative, i) => (
+      {initiatives.map((initiative, i) => (
         <div
           key={i}
           className="px-8"

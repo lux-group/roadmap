@@ -49,16 +49,16 @@ team_members:
 gantt_items:
   - title: Dynamic Bundles and packages
     start_date: 2026-04-01
-    end_date: 2027-06-29
+    end_date: 2026-09-30
   - title: Fully Developed Vacation Rental Product
-    start_date: 2026-04-02
-    end_date: 2026-07-30
+    start_date: 2026-05-01
+    end_date: 2026-09-30
   - title: Expand Property Supply in International Markets
     start_date: 2026-04-01
-    end_date: 2026-12-31
+    end_date: 2026-10-31
   - title: New Order Service Orchestrator
-    start_date: 2026-04-01
-    end_date: 2026-09-30
+    start_date: 2026-06-01
+    end_date: 2026-10-31
   - title: Smarter Discounts and Margin Management
     start_date: 2026-06-01
     end_date: 2026-12-31
